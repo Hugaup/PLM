@@ -1,0 +1,13 @@
+# Python / uv project ignores
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+.cache/
+uv.lock
+
+# VSCode
+.vscode/
