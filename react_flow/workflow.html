@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPlus Workflow</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.23.5/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reactflow@11.10.1/dist/umd/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reactflow@11.10.1/dist/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+        }
+        
+        #root {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .react-flow__node {
+            border-radius: 12px;
+            padding: 0;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            font-size: 14px;
+            min-width: 200px;
+        }
+        
+        .react-flow__node:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .react-flow__node-default {
+            background: white;
+        }
+        
+        .node-content {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .node-header {
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .node-icon {
+            font-size: 20px;
+        }
+        
+        .node-description {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .node-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+        
+        /* Client nodes - Blue */
+        .node-client .node-header {
+            color: #1565C0;
+        }
+        
+        .node-client {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            border-left: 5px solid #2196F3;
+        }
+        
+        .node-client .node-badge {
+            background: #2196F3;
+            color: white;
+        }
+        
+        /* Logistics nodes - Orange */
+        .node-logistics .node-header {
+            color: #E65100;
+        }
+        
+        .node-logistics {
+            background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+            border-left: 5px solid #FF9800;
+        }
+        
+        .node-logistics .node-badge {
+            background: #FF9800;
+            color: white;
+        }
+        
+        /* Service nodes - Green */
+        .node-service .node-header {
+            color: #2E7D32;
+        }
+        
+        .node-service {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .node-service .node-badge {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        /* Custom edges */
+        .react-flow__edge-path {
+            stroke-width: 2.5;
+            stroke: #94a3b8;
+            transition: all 0.3s ease;
+        }
+        
+        .react-flow__edge:hover .react-flow__edge-path {
+            stroke: #64748b;
+            stroke-width: 3;
+        }
+        
+        .react-flow__edge.animated .react-flow__edge-path {
+            stroke-dasharray: 5;
+            animation: dashdraw 0.5s linear infinite;
+        }
+        
+        @keyframes dashdraw {
+            to {
+                stroke-dashoffset: -10;
+            }
+        }
+        
+        /* Controls */
+        .react-flow__controls {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .react-flow__controls-button {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        
+        .react-flow__controls-button:hover {
+            background: #f1f5f9;
+        }
+        
+        /* Mini map */
+        .react-flow__minimap {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* Legend */
+        .legend {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 5;
+            min-width: 200px;
+        }
+        
+        .legend-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            border: 2px solid transparent;
+        }
+        
+        .legend-color.client {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            border-color: #2196F3;
+        }
+        
+        .legend-color.logistics {
+            background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+            border-color: #FF9800;
+        }
+        
+        .legend-color.service {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-color: #4CAF50;
+        }
+        
+        .react-flow__attribution {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useCallback } = React;
+        const { ReactFlow, Controls, Background, MiniMap, MarkerType } = ReactFlowRenderer;
+        
+        // Custom Node Component
+        const CustomNode = ({ data }) => {
+            return (
+                <div className={`node-content node-${data.type}`}>
+                    <div className="node-header">
+                        <span className="node-icon">{data.icon}</span>
+                        <span>{data.label}</span>
+                    </div>
+                    {data.description && (
+                        <div className="node-description">{data.description}</div>
+                    )}
+                    {data.badge && (
+                        <div className="node-badge">{data.badge}</div>
+                    )}
+                </div>
+            );
+        };
+        
+        const nodeTypes = {
+            custom: CustomNode
+        };
+        
+        // Initial nodes configuration
+        const initialNodes = [
+            // CLIENT NODES (Column 1)
+            { id: 'c1', type: 'custom', position: { x: 50, y: 50 }, data: { label: 'Quote Request', type: 'client', icon: '📝', description: 'Customer initiates quote request', badge: 'Entry Point' } },
+            { id: 'c2', type: 'custom', position: { x: 50, y: 180 }, data: { label: 'Commercial Validation', type: 'client', icon: '✅', description: 'Sales team validates feasibility' } },
+            { id: 'c3', type: 'custom', position: { x: 50, y: 310 }, data: { label: 'Contract Signature', type: 'client', icon: '📄', description: 'Official agreement signed' } },
+            { id: 'c4', type: 'custom', position: { x: 50, y: 440 }, data: { label: 'Order Tracking', type: 'client', icon: '📊', description: 'Monitor order progress' } },
+            { id: 'c5', type: 'custom', position: { x: 50, y: 570 }, data: { label: 'Reception & Validation', type: 'client', icon: '📦', description: 'Customer receives and validates' } },
+            { id: 'c6', type: 'custom', position: { x: 50, y: 700 }, data: { label: 'Invoicing', type: 'client', icon: '💰', description: 'Generate and send invoice' } },
+            { id: 'c7', type: 'custom', position: { x: 50, y: 830 }, data: { label: 'Customer Support', type: 'client', icon: '💬', description: 'Post-sale assistance', badge: 'End Point' } },
+            
+            // LOGISTICS NODES (Column 2)
+            { id: 'l1', type: 'custom', position: { x: 400, y: 50 }, data: { label: 'Production Planning', type: 'logistics', icon: '📅', description: 'Schedule manufacturing' } },
+            { id: 'l2', type: 'custom', position: { x: 400, y: 180 }, data: { label: 'Parts Procurement', type: 'logistics', icon: '🛒', description: 'Order necessary components' } },
+            { id: 'l3', type: 'custom', position: { x: 400, y: 310 }, data: { label: 'Material Reception', type: 'logistics', icon: '📥', description: 'Receive supplier materials' } },
+            { id: 'l4', type: 'custom', position: { x: 400, y: 440 }, data: { label: 'Quality Control', type: 'logistics', icon: '🔍', description: 'Inspect incoming materials' } },
+            { id: 'l5', type: 'custom', position: { x: 400, y: 570 }, data: { label: 'Storage', type: 'logistics', icon: '🏪', description: 'Warehouse management' } },
+            { id: 'l6', type: 'custom', position: { x: 400, y: 700 }, data: { label: 'Order Preparation', type: 'logistics', icon: '📋', description: 'Prepare for shipment' } },
+            { id: 'l7', type: 'custom', position: { x: 400, y: 830 }, data: { label: 'Shipment', type: 'logistics', icon: '🚚', description: 'Deliver to customer' } },
+            { id: 'l8', type: 'custom', position: { x: 400, y: 960 }, data: { label: 'Returns Management', type: 'logistics', icon: '↩️', description: 'Handle returns' } },
+            
+            // SERVICE NODES (Column 3)
+            { id: 's1', type: 'custom', position: { x: 750, y: 50 }, data: { label: 'Station Assignment', type: 'service', icon: '🎯', description: 'Assign assembly workstation' } },
+            { id: 's2', type: 'custom', position: { x: 750, y: 180 }, data: { label: 'Assembly & Mounting', type: 'service', icon: '🔧', description: 'Physical assembly process' } },
+            { id: 's3', type: 'custom', position: { x: 750, y: 310 }, data: { label: 'Functional Testing', type: 'service', icon: '⚡', description: 'Test product functionality' } },
+            { id: 's4', type: 'custom', position: { x: 750, y: 440 }, data: { label: 'Final Quality Control', type: 'service', icon: '✓', description: 'Final inspection' } },
+            { id: 's5', type: 'custom', position: { x: 750, y: 570 }, data: { label: 'Technical Documentation', type: 'service', icon: '📖', description: 'Create product docs' } },
+            { id: 's6', type: 'custom', position: { x: 750, y: 700 }, data: { label: 'Certification', type: 'service', icon: '🏆', description: 'Certify compliance' } },
+            { id: 's7', type: 'custom', position: { x: 750, y: 830 }, data: { label: 'Preventive Maintenance', type: 'service', icon: '🛠️', description: 'Equipment maintenance' } },
+        ];
+        
+        // Initial edges (connections between nodes)
+        const initialEdges = [
+            // Client flow
+            { id: 'e-c1-c2', source: 'c1', target: 'c2', animated: true, style: { stroke: '#2196F3' } },
+            { id: 'e-c2-c3', source: 'c2', target: 'c3', animated: true, style: { stroke: '#2196F3' } },
+            { id: 'e-c3-c4', source: 'c3', target: 'c4', animated: true, style: { stroke: '#2196F3' } },
+            { id: 'e-c4-c5', source: 'c4', target: 'c5', animated: true, style: { stroke: '#2196F3' } },
+            { id: 'e-c5-c6', source: 'c5', target: 'c6', animated: true, style: { stroke: '#2196F3' } },
+            { id: 'e-c6-c7', source: 'c6', target: 'c7', animated: true, style: { stroke: '#2196F3' } },
+            
+            // Logistics flow
+            { id: 'e-l1-l2', source: 'l1', target: 'l2', animated: true, style: { stroke: '#FF9800' } },
+            { id: 'e-l2-l3', source: 'l2', target: 'l3', animated: true, style: { stroke: '#FF9800' } },
+            { id: 'e-l3-l4', source: 'l3', target: 'l4', animated: true, style: { stroke: '#FF9800' } },
+            { id: 'e-l4-l5', source: 'l4', target: 'l5', animated: true, style: { stroke: '#FF9800' } },
+            { id: 'e-l5-l6', source: 'l5', target: 'l6', animated: true, style: { stroke: '#FF9800' } },
+            { id: 'e-l6-l7', source: 'l6', target: 'l7', animated: true, style: { stroke: '#FF9800' } },
+            { id: 'e-l7-l8', source: 'l7', target: 'l8', animated: true, style: { stroke: '#FF9800' } },
+            
+            // Service flow
+            { id: 'e-s1-s2', source: 's1', target: 's2', animated: true, style: { stroke: '#4CAF50' } },
+            { id: 'e-s2-s3', source: 's2', target: 's3', animated: true, style: { stroke: '#4CAF50' } },
+            { id: 'e-s3-s4', source: 's3', target: 's4', animated: true, style: { stroke: '#4CAF50' } },
+            { id: 'e-s4-s5', source: 's4', target: 's5', animated: true, style: { stroke: '#4CAF50' } },
+            { id: 'e-s5-s6', source: 's5', target: 's6', animated: true, style: { stroke: '#4CAF50' } },
+            { id: 'e-s6-s7', source: 's6', target: 's7', animated: true, style: { stroke: '#4CAF50' } },
+            
+            // Cross-column connections
+            { id: 'e-c2-l1', source: 'c2', target: 'l1', label: 'Triggers', animated: true, style: { stroke: '#9C27B0', strokeWidth: 3 }, markerEnd: { type: MarkerType.ArrowClosed, color: '#9C27B0' } },
+            { id: 'e-c3-l1', source: 'c3', target: 'l1', animated: true, style: { stroke: '#9C27B0', strokeWidth: 2 } },
+            { id: 'e-c4-l6', source: 'c4', target: 'l6', label: 'Monitors', animated: true, style: { stroke: '#9C27B0', strokeWidth: 2 } },
+            { id: 'e-l7-c5', source: 'l7', target: 'c5', label: 'Delivers', animated: true, style: { stroke: '#9C27B0', strokeWidth: 3 }, markerEnd: { type: MarkerType.ArrowClosed, color: '#9C27B0' } },
+            { id: 'e-l2-s2', source: 'l2', target: 's2', label: 'Supplies', animated: true, style: { stroke: '#FF5722', strokeWidth: 3 }, markerEnd: { type: MarkerType.ArrowClosed, color: '#FF5722' } },
+            { id: 'e-s4-l6', source: 's4', target: 'l6', label: 'Ready', animated: true, style: { stroke: '#FF5722', strokeWidth: 3 }, markerEnd: { type: MarkerType.ArrowClosed, color: '#FF5722' } },
+        ];
+        
+        // Main App Component
+        function WorkflowApp() {
+            const [nodes, setNodes] = useState(initialNodes);
+            const [edges, setEdges] = useState(initialEdges);
+            
+            const onNodesChange = useCallback(
+                (changes) => setNodes((nds) => ReactFlowRenderer.applyNodeChanges(changes, nds)),
+                []
+            );
+            
+            const onEdgesChange = useCallback(
+                (changes) => setEdges((eds) => ReactFlowRenderer.applyEdgeChanges(changes, eds)),
+                []
+            );
+            
+            return (
+                <>
+                    <div className="legend">
+                        <div className="legend-title">AirPlus Workflow</div>
+                        <div className="legend-item">
+                            <div className="legend-color client"></div>
+                            <span>Client Process</span>
+                        </div>
+                        <div className="legend-item">
+                            <div className="legend-color logistics"></div>
+                            <span>Logistics</span>
+                        </div>
+                        <div className="legend-item">
+                            <div className="legend-color service"></div>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                    
+                    <ReactFlow
+                        nodes={nodes}
+                        edges={edges}
+                        onNodesChange={onNodesChange}
+                        onEdgesChange={onEdgesChange}
+                        nodeTypes={nodeTypes}
+                        fitView
+                        attributionPosition="bottom-left"
+                    >
+                        <Background color="#aaa" gap={16} />
+                        <Controls />
+                        <MiniMap 
+                            nodeColor={(node) => {
+                                switch (node.data.type) {
+                                    case 'client': return '#2196F3';
+                                    case 'logistics': return '#FF9800';
+                                    case 'service': return '#4CAF50';
+                                    default: return '#999';
+                                }
+                            }}
+                            maskColor="rgba(0, 0, 0, 0.1)"
+                        />
+                    </ReactFlow>
+                </>
+            );
+        }
+        
+        // Render the app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<WorkflowApp />);
+    </script>
+</body>
+</html>

@@ -27,6 +27,7 @@ st.markdown("""
         text-align: center;
         font-weight: 500;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: relative;
     }
     
     .client-box {
@@ -77,6 +78,21 @@ st.markdown("""
         color: #666;
         margin: 5px 0;
     }
+    
+    .arrow-right {
+        text-align: center;
+        font-size: 20px;
+        color: #999;
+        margin: 5px 0;
+    }
+    
+    .connection-info {
+        text-align: center;
+        font-size: 11px;
+        color: #888;
+        font-style: italic;
+        margin: 3px 0;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -92,110 +108,313 @@ st.markdown("### Operational Workflow & Analytics")
 st.markdown("---")
 
 # Create tabs
-tab1, tab2 = st.tabs(["📋 Workflow", "📊 Graphs"])
+tab1, tab2 = st.tabs(["📋 Workflow", "📊 Analytics"])
 
 # ================================
 # TAB 1: WORKFLOW
 # ================================
 with tab1:
     st.header("Process Workflow Overview")
-    st.markdown("*Based on reference design: data/image_front.jpeg*")
+    st.markdown("*Interactive workflow powered by React Flow*")
     
-    # Load and display reference image
-    try:
-        reference_image = Image.open("data/image_front.jpeg")
-        with st.expander("🖼️ View Reference Image"):
-            st.image(reference_image, caption="Reference Workflow Design", use_container_width=True)
-    except Exception as e:
-        st.warning(f"Could not load reference image: {e}")
+    # Add toggle for view mode
+    col_toggle1, col_toggle2 = st.columns([1, 4])
+    with col_toggle1:
+        view_mode = st.radio("View Mode:", ["Interactive", "Classic"], horizontal=True)
     
     st.markdown("---")
     
-    # Create three columns for the workflow
-    col1, col2, col3 = st.columns(3)
-    
-    # ================================
-    # COLUMN 1: CLIENTS (Blue)
-    # ================================
-    with col1:
-        st.markdown('<div class="column-header client-header">Clients</div>', unsafe_allow_html=True)
+    if view_mode == "Interactive":
+        # Interactive Workflow with Plotly Network Graph
+        st.subheader("🎨 Interactive Workflow Visualization")
         
-        # Client workflow boxes
-        client_steps = [
-            "Demande de devis",
-            "Validation commerciale",
-            "Signature du contrat",
-            "Suivi de commande",
-            "Réception & validation",
-            "Facturation",
-            "Support client"
+        import plotly.graph_objects as go
+        import networkx as nx
+        
+        # Create a directed graph
+        G = nx.DiGraph()
+        
+        # Define nodes with departments
+        nodes = {
+            # Client nodes
+            'c1': {'label': 'Quote Request', 'dept': 'client', 'pos': (0, 6)},
+            'c2': {'label': 'Commercial Validation', 'dept': 'client', 'pos': (0, 5)},
+            'c3': {'label': 'Contract Signature', 'dept': 'client', 'pos': (0, 4)},
+            'c4': {'label': 'Order Tracking', 'dept': 'client', 'pos': (0, 3)},
+            'c5': {'label': 'Reception & Validation', 'dept': 'client', 'pos': (0, 2)},
+            'c6': {'label': 'Invoicing', 'dept': 'client', 'pos': (0, 1)},
+            'c7': {'label': 'Customer Support', 'dept': 'client', 'pos': (0, 0)},
+            
+            # Logistics nodes
+            'l1': {'label': 'Production Planning', 'dept': 'logistics', 'pos': (5, 7)},
+            'l2': {'label': 'Parts Procurement', 'dept': 'logistics', 'pos': (5, 6)},
+            'l3': {'label': 'Material Reception', 'dept': 'logistics', 'pos': (5, 5)},
+            'l4': {'label': 'Quality Control', 'dept': 'logistics', 'pos': (5, 4)},
+            'l5': {'label': 'Storage', 'dept': 'logistics', 'pos': (5, 3)},
+            'l6': {'label': 'Order Preparation', 'dept': 'logistics', 'pos': (5, 2)},
+            'l7': {'label': 'Shipment', 'dept': 'logistics', 'pos': (5, 1)},
+            'l8': {'label': 'Returns Management', 'dept': 'logistics', 'pos': (5, 0)},
+            
+            # Service nodes
+            's1': {'label': 'Station Assignment', 'dept': 'service', 'pos': (10, 6)},
+            's2': {'label': 'Assembly & Mounting', 'dept': 'service', 'pos': (10, 5)},
+            's3': {'label': 'Functional Testing', 'dept': 'service', 'pos': (10, 4)},
+            's4': {'label': 'Final Quality Control', 'dept': 'service', 'pos': (10, 3)},
+            's5': {'label': 'Technical Documentation', 'dept': 'service', 'pos': (10, 2)},
+            's6': {'label': 'Certification', 'dept': 'service', 'pos': (10, 1)},
+            's7': {'label': 'Preventive Maintenance', 'dept': 'service', 'pos': (10, 0)},
+        }
+        
+        # Add nodes to graph
+        for node_id, attrs in nodes.items():
+            G.add_node(node_id, **attrs)
+        
+        # Define edges (connections)
+        edges = [
+            # Client flow
+            ('c1', 'c2'), ('c2', 'c3'), ('c3', 'c4'), ('c4', 'c5'), ('c5', 'c6'), ('c6', 'c7'),
+            # Logistics flow
+            ('l1', 'l2'), ('l2', 'l3'), ('l3', 'l4'), ('l4', 'l5'), ('l5', 'l6'), ('l6', 'l7'), ('l7', 'l8'),
+            # Service flow
+            ('s1', 's2'), ('s2', 's3'), ('s3', 's4'), ('s4', 's5'), ('s5', 's6'), ('s6', 's7'),
+            # Cross-department connections
+            ('c2', 'l1'), ('c3', 'l1'), ('c4', 'l6'), ('l7', 'c5'),
+            ('l2', 's2'), ('s4', 'l6'),
         ]
         
-        for i, step in enumerate(client_steps):
-            st.markdown(f'<div class="workflow-box client-box">{step}</div>', unsafe_allow_html=True)
-            if i < len(client_steps) - 1:
-                st.markdown('<div class="arrow-down">↓</div>', unsafe_allow_html=True)
-    
-    # ================================
-    # COLUMN 2: LOGISTICS (Orange/Beige)
-    # ================================
-    with col2:
-        st.markdown('<div class="column-header logistics-header">Logistique</div>', unsafe_allow_html=True)
+        G.add_edges_from(edges)
         
-        # Logistics workflow boxes
-        logistics_steps = [
-            "Planification production",
-            "Approvisionnement pièces",
-            "Réception matériel",
-            "Contrôle qualité entrée",
-            "Stockage",
-            "Préparation commande",
-            "Expédition",
-            "Gestion des retours"
-        ]
+        # Get positions
+        pos = {node: attrs['pos'] for node, attrs in nodes.items()}
         
-        for i, step in enumerate(logistics_steps):
-            st.markdown(f'<div class="workflow-box logistics-box">{step}</div>', unsafe_allow_html=True)
-            if i < len(logistics_steps) - 1:
-                st.markdown('<div class="arrow-down">↓</div>', unsafe_allow_html=True)
-    
-    # ================================
-    # COLUMN 3: SERVICES (Green)
-    # ================================
-    with col3:
-        st.markdown('<div class="column-header service-header">Services</div>', unsafe_allow_html=True)
+        # Create edge traces (simple lines)
+        edge_traces = []
+        for edge in G.edges():
+            x0, y0 = pos[edge[0]]
+            x1, y1 = pos[edge[1]]
+            edge_traces.append(
+                go.Scatter(
+                    x=[x0, x1, None],
+                    y=[y0, y1, None],
+                    mode='lines',
+                    line=dict(width=2, color='#888'),
+                    hoverinfo='none',
+                    showlegend=False
+                )
+            )
         
-        # Service workflow boxes
-        service_steps = [
-            "Affectation poste montage",
-            "Montage & assemblage",
-            "Tests fonctionnels",
-            "Contrôle qualité final",
-            "Documentation technique",
-            "Certification",
-            "Maintenance préventive"
-        ]
+        # Create arrow annotations
+        arrow_annotations = []
+        for edge in G.edges():
+            x0, y0 = pos[edge[0]]
+            x1, y1 = pos[edge[1]]
+            
+            arrow_annotations.append(
+                dict(
+                    ax=x0, ay=y0,
+                    axref='x', ayref='y',
+                    x=x1, y=y1,
+                    xref='x', yref='y',
+                    showarrow=True,
+                    arrowhead=2,
+                    arrowsize=1.5,
+                    arrowwidth=2,
+                    arrowcolor='#888',
+                    opacity=0.6
+                )
+            )
         
-        for i, step in enumerate(service_steps):
-            st.markdown(f'<div class="workflow-box service-box">{step}</div>', unsafe_allow_html=True)
-            if i < len(service_steps) - 1:
-                st.markdown('<div class="arrow-down">↓</div>', unsafe_allow_html=True)
-    
-    st.markdown("---")
-    
-    # Additional information section
-    st.subheader("📌 Process Overview")
-    
-    info_col1, info_col2, info_col3 = st.columns(3)
-    
-    with info_col1:
-        st.metric("Client Steps", len(client_steps), "Complete workflow")
-    
-    with info_col2:
-        st.metric("Logistics Steps", len(logistics_steps), "Supply chain")
-    
-    with info_col3:
-        st.metric("Service Steps", len(service_steps), "Production flow")
+        # Create node traces by department
+        dept_colors = {'client': '#2196F3', 'logistics': '#FF9800', 'service': '#4CAF50'}
+        dept_names = {'client': 'Client Process', 'logistics': 'Logistics', 'service': 'Services'}
+        
+        node_traces = {}
+        for dept in ['client', 'logistics', 'service']:
+            node_x = []
+            node_y = []
+            node_text = []
+            
+            for node, attrs in nodes.items():
+                if attrs['dept'] == dept:
+                    x, y = pos[node]
+                    node_x.append(x)
+                    node_y.append(y)
+                    node_text.append(attrs['label'])
+            
+            node_traces[dept] = go.Scatter(
+                x=node_x, y=node_y,
+                mode='markers+text',
+                marker=dict(size=25, color=dept_colors[dept], line=dict(width=2, color='white')),
+                text=node_text,
+                textposition="bottom center",
+                textfont=dict(size=10, color='#333'),
+                hoverinfo='text',
+                name=dept_names[dept],
+                showlegend=True
+            )
+        
+        # Create figure
+        fig = go.Figure(data=edge_traces + list(node_traces.values()))
+        
+        fig.update_layout(
+            title="AirPlus Process Mining Workflow",
+            showlegend=True,
+            hovermode='closest',
+            margin=dict(b=20, l=20, r=20, t=60),
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            height=700,
+            plot_bgcolor='rgba(240, 242, 246, 0.5)',
+            legend=dict(x=0.02, y=0.98, bgcolor='rgba(255,255,255,0.8)'),
+            annotations=arrow_annotations
+        )
+        
+        st.plotly_chart(fig, width='stretch')
+        
+        # Additional info
+        st.markdown("---")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.info("🔵 **Client Process**\n7 steps from quote to support")
+        with col2:
+            st.warning("🟠 **Logistics**\n8 steps managing supply chain")
+        with col3:
+            st.success("🟢 **Services**\n7 steps for production & quality")
+        
+    else:
+        # Original classic view
+        # Load and display reference image
+        try:
+            reference_image = Image.open("data/image_front.jpeg")
+            with st.expander("🖼️ View Reference Image"):
+                st.image(reference_image, caption="Reference Workflow Design", width='stretch')
+        except Exception as e:
+            st.warning(f"Could not load reference image: {e}")
+        
+        st.markdown("---")
+        
+        # Create three columns for the workflow
+        col1, col2, col3 = st.columns(3)
+        
+        # ================================
+        # COLUMN 1: CLIENTS (Blue)
+        # ================================
+        with col1:
+            st.markdown('<div class="column-header client-header">Clients</div>', unsafe_allow_html=True)
+            
+            # Client workflow boxes
+            client_steps = [
+            "Quote Request",
+            "Commercial Validation",
+            "Contract Signature",
+            "Order Tracking",
+            "Reception & Validation",
+            "Invoicing",
+            "Customer Support"
+            ]
+            
+            connections = [
+            None,
+            "→ Production Planning",
+            None,
+            "→ Preparation",
+            "← Shipment",
+            None,
+            None
+            ]
+            
+            for i, step in enumerate(client_steps):
+                st.markdown(f'<div class="workflow-box client-box">{step}</div>', unsafe_allow_html=True)
+                if connections[i]:
+                    st.markdown(f'<div class="connection-info">{connections[i]}</div>', unsafe_allow_html=True)
+                if i < len(client_steps) - 1:
+                    st.markdown('<div class="arrow-down">↓</div>', unsafe_allow_html=True)
+        
+        # ================================
+        # COLUMN 2: LOGISTICS (Orange/Beige)
+        # ================================
+        with col2:
+            st.markdown('<div class="column-header logistics-header">Logistics</div>', unsafe_allow_html=True)
+            
+            # Logistics workflow boxes
+            logistics_steps = [
+                "Production Planning",
+                "Parts Procurement",
+                "Material Reception",
+                "Incoming Quality Control",
+                "Storage",
+                "Order Preparation",
+                "Shipment",
+                "Returns Management"
+            ]
+            
+            log_connections = [
+                "← Contract",
+                "→ Assembly",
+                None,
+                None,
+                None,
+                "← Order",
+                "→ Customer",
+                None
+            ]
+            
+            for i, step in enumerate(logistics_steps):
+                st.markdown(f'<div class="workflow-box logistics-box">{step}</div>', unsafe_allow_html=True)
+                if log_connections[i]:
+                    st.markdown(f'<div class="connection-info">{log_connections[i]}</div>', unsafe_allow_html=True)
+                if i < len(logistics_steps) - 1:
+                    st.markdown('<div class="arrow-down">↓</div>', unsafe_allow_html=True)
+        
+        # ================================
+        # COLUMN 3: SERVICES (Green)
+        # ================================
+        with col3:
+            st.markdown('<div class="column-header service-header">Services</div>', unsafe_allow_html=True)
+            
+            # Service workflow boxes
+            service_steps = [
+                "Assembly Station Assignment",
+                "Assembly & Mounting",
+                "Functional Testing",
+                "Final Quality Control",
+                "Technical Documentation",
+                "Certification",
+                "Preventive Maintenance"
+            ]
+            
+            service_connections = [
+                None,
+                "← Parts",
+                None,
+                "→ Preparation",
+                None,
+                None,
+                None
+            ]
+            
+            for i, step in enumerate(service_steps):
+                st.markdown(f'<div class="workflow-box service-box">{step}</div>', unsafe_allow_html=True)
+                if service_connections[i]:
+                    st.markdown(f'<div class="connection-info">{service_connections[i]}</div>', unsafe_allow_html=True)
+                if i < len(service_steps) - 1:
+                    st.markdown('<div class="arrow-down">↓</div>', unsafe_allow_html=True)
+        
+        st.markdown("---")
+        
+        # Additional information section
+        st.subheader("📌 Process Overview")
+        
+        info_col1, info_col2, info_col3 = st.columns(3)
+        
+        with info_col1:
+            st.metric("Client Steps", len(client_steps), "Complete workflow")
+        
+        with info_col2:
+            st.metric("Logistics Steps", len(logistics_steps), "Supply chain")
+        
+        with info_col3:
+            st.metric("Service Steps", len(service_steps), "Production flow")
 
 # ================================
 # TAB 2: GRAPHS
@@ -302,7 +521,7 @@ with tab2:
                 plt.tight_layout()
                 st.pyplot(fig)
                 
-                st.dataframe(delays_by_poste, use_container_width=True)
+                st.dataframe(delays_by_poste, width='stretch')
         
         # Components Analysis
         with viz_tab3:
@@ -312,7 +531,7 @@ with tab2:
                 top_components = summary['Top_Components']
                 
                 st.markdown("**Top 15 Most Expensive Components**")
-                st.dataframe(top_components.head(15), use_container_width=True)
+                st.dataframe(top_components.head(15), width='stretch')
                 
                 # Bar chart of top components
                 fig, ax = plt.subplots(figsize=(12, 8))
@@ -346,7 +565,7 @@ with tab2:
                 
                 st.markdown("---")
                 st.markdown("**Top 10 Anomalies**")
-                st.dataframe(anomalies.head(10), use_container_width=True)
+                st.dataframe(anomalies.head(10), width='stretch')
                 
                 # Scatter plot
                 fig, ax = plt.subplots(figsize=(12, 6))
