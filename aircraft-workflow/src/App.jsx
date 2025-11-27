@@ -15,6 +15,7 @@ import EmployeeDirectory from './components/EmployeeDirectory';
 import PartsDirectory from './components/PartsDirectory';
 import ProductionPlanning from './components/ProductionPlanning';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
+import IshikawaDashboard from './components/IshikawaDashboard';
 import workflowData from '../workflow_data.json';
 
 const nodeTypes = {
@@ -54,7 +55,7 @@ function App() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [viewMode, setViewMode] = useState('workflow'); // 'workflow' or 'detail'
-  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts', 'production' or 'analytics'
+  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts', 'production', 'analytics' or 'ishikawa'
 
   // Créer un index des employés par matricule pour un accès rapide
   const employeesByMatricule = useMemo(() => {
@@ -247,6 +248,19 @@ function App() {
         >
           📊 Analyse & Indicateurs
         </button>
+        <button
+          onClick={() => {
+            setActiveTab('ishikawa');
+            setSelectedItem(null);
+          }}
+          className={`px-6 py-3 font-semibold transition-colors ${
+            activeTab === 'ishikawa'
+              ? 'border-b-2 border-green-600 text-green-600'
+              : 'text-gray-600 hover:text-gray-800'
+          }`}
+        >
+          🐟 Ishikawa (6M)
+        </button>
       </div>
 
       {/* Content */}
@@ -305,12 +319,16 @@ function App() {
             stages={workflowData.stages || []} 
             partsByReference={partsByReference}
           />
-        ) : (
+        ) : activeTab === 'analytics' ? (
           <AnalyticsDashboard 
             stages={workflowData.stages || []} 
             employees={workflowData.employees || []}
             parts={workflowData.parts || []}
             partsByReference={partsByReference}
+          />
+        ) : (
+          <IshikawaDashboard 
+            stages={workflowData.stages || []} 
           />
         )}
       </div>
