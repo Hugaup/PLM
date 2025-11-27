@@ -12,6 +12,8 @@ import StageNode from './components/StageNode';
 import PosteNode from './components/PosteNode';
 import DetailPanel from './components/DetailPanel';
 import EmployeeDirectory from './components/EmployeeDirectory';
+import PartsDirectory from './components/PartsDirectory';
+import ProductionPlanning from './components/ProductionPlanning';
 import workflowData from '../workflow_data.json';
 
 const nodeTypes = {
@@ -51,7 +53,7 @@ function App() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [viewMode, setViewMode] = useState('workflow'); // 'workflow' or 'detail'
-  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow' or 'employees'
+  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts' or 'production'
 
   // Créer un index des employés par matricule pour un accès rapide
   const employeesByMatricule = useMemo(() => {
@@ -59,6 +61,17 @@ function App() {
     if (workflowData.employees) {
       workflowData.employees.forEach(emp => {
         map[emp.Matricule] = emp;
+      });
+    }
+    return map;
+  }, []);
+
+  // Créer un index des pièces par référence
+  const partsByReference = useMemo(() => {
+    const map = {};
+    if (workflowData.parts) {
+      workflowData.parts.forEach(part => {
+        map[part['Code / Référence']] = part;
       });
     }
     return map;
@@ -194,6 +207,32 @@ function App() {
         >
           👥 Annuaire du Personnel ({workflowData.employees?.length || 0})
         </button>
+        <button
+          onClick={() => {
+            setActiveTab('parts');
+            setSelectedItem(null);
+          }}
+          className={`px-6 py-3 font-semibold transition-colors ${
+            activeTab === 'parts'
+              ? 'border-b-2 border-blue-600 text-blue-600'
+              : 'text-gray-600 hover:text-gray-800'
+          }`}
+        >
+          📦 Catalogue des Pièces ({workflowData.parts?.length || 0})
+        </button>
+        <button
+          onClick={() => {
+            setActiveTab('production');
+            setSelectedItem(null);
+          }}
+          className={`px-6 py-3 font-semibold transition-colors ${
+            activeTab === 'production'
+              ? 'border-b-2 border-blue-600 text-blue-600'
+              : 'text-gray-600 hover:text-gray-800'
+          }`}
+        >
+          🏭 Planification Production
+        </button>
       </div>
 
       {/* Content */}
@@ -238,12 +277,20 @@ function App() {
               <DetailPanel
                 item={selectedItem}
                 employeesByMatricule={employeesByMatricule}
+                partsByReference={partsByReference}
                 onClose={() => setSelectedItem(null)}
               />
             )}
           </>
-        ) : (
+        ) : activeTab === 'employees' ? (
           <EmployeeDirectory employees={workflowData.employees || []} />
+        ) : activeTab === 'parts' ? (
+          <PartsDirectory parts={workflowData.parts || []} />
+        ) : (
+          <ProductionPlanning 
+            stages={workflowData.stages || []} 
+            partsByReference={partsByReference}
+          />
         )}
       </div>
     </div>

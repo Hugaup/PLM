@@ -38,7 +38,8 @@ print("\n=== Création du mapping pour React Flow ===")
 workflow_data = {
     'stages': [],
     'relationships': {},
-    'employees': erp_df.to_dict('records')  # Tous les employés
+    'employees': erp_df.to_dict('records'),  # Tous les employés
+    'parts': plm_df.to_dict('records')  # Toutes les pièces
 }
 
 for idx, etape in enumerate(etapes_uniques):

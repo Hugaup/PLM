@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { X, User, Package, AlertCircle, Clock } from 'lucide-react';
 import EmployeeDetailModal from './EmployeeDetailModal';
+import PartDetailModal from './PartDetailModal';
 
-const DetailPanel = ({ item, employeesByMatricule, onClose }) => {
+const DetailPanel = ({ item, employeesByMatricule, partsByReference, onClose }) => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
+  const [selectedPart, setSelectedPart] = useState(null);
   
   if (!item) return null;
 
@@ -13,6 +15,18 @@ const DetailPanel = ({ item, employeesByMatricule, onClose }) => {
   const getFullEmployee = (empBasic) => {
     if (!empBasic || !empBasic.Matricule) return null;
     return employeesByMatricule[empBasic.Matricule] || empBasic;
+  };
+
+  // Parser les références de pièces (séparées par ";")
+  const parsePartReferences = (refString) => {
+    if (!refString) return [];
+    return refString.split(';').map(ref => ref.trim()).filter(ref => ref);
+  };
+
+  // Obtenir les pièces depuis les références
+  const getPartsFromReferences = (refString) => {
+    const refs = parsePartReferences(refString);
+    return refs.map(ref => partsByReference[ref]).filter(part => part);
   };
 
   return (
@@ -49,14 +63,6 @@ const DetailPanel = ({ item, employeesByMatricule, onClose }) => {
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               Poste #{data.poste_id}
             </h3>
-
-            {/* Référence */}
-            {data.reference && (
-              <div className="mb-4 p-3 bg-gray-50 rounded-lg">
-                <div className="text-xs font-semibold text-gray-600 mb-1">RÉFÉRENCE</div>
-                <div className="text-sm font-mono text-gray-800">{data.reference}</div>
-              </div>
-            )}
 
             {/* Temps */}
             <div className="mb-4 p-3 bg-gray-50 rounded-lg">
@@ -134,32 +140,42 @@ const DetailPanel = ({ item, employeesByMatricule, onClose }) => {
             </div>
 
             {/* Pièces */}
-            {data.pieces && data.pieces.length > 0 && (
-              <div>
-                <div className="flex items-center gap-2 mb-3">
-                  <Package className="w-4 h-4 text-gray-700" />
-                  <h4 className="text-sm font-semibold text-gray-700">
-                    PIÈCES UTILISÉES ({data.pieces.length})
-                  </h4>
+            {data.reference && (() => {
+              const parts = getPartsFromReferences(data.reference);
+              return parts.length > 0 && (
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Package className="w-4 h-4 text-gray-700" />
+                    <h4 className="text-sm font-semibold text-gray-700">
+                      PIÈCES UTILISÉES ({parts.length})
+                    </h4>
+                  </div>
+                  <div className="space-y-2">
+                    {parts.map((part, idx) => (
+                      <div 
+                        key={idx} 
+                        onClick={() => setSelectedPart(part)}
+                        className="p-3 bg-blue-50 rounded border border-blue-200 cursor-pointer hover:bg-blue-100 hover:border-blue-400 transition-all"
+                      >
+                        <div className="font-semibold text-sm text-gray-800">
+                          {part.Désignation}
+                        </div>
+                        <div className="text-xs text-gray-600 mt-1">
+                          Code: {part['Code / Référence']}
+                        </div>
+                        <div className="flex justify-between mt-2 text-xs text-gray-600">
+                          <span>Qté: {part.Quantité}</span>
+                          <span>{part.Fournisseur}</span>
+                        </div>
+                        <div className="text-xs text-blue-600 mt-1 font-medium">
+                          Cliquer pour plus de détails →
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  {data.pieces.map((piece, idx) => (
-                    <div key={idx} className="p-3 bg-blue-50 rounded border border-blue-200">
-                      <div className="font-semibold text-sm text-gray-800">
-                        {piece.Désignation}
-                      </div>
-                      <div className="text-xs text-gray-600 mt-1">
-                        Code: {piece['Code / Référence']}
-                      </div>
-                      <div className="flex justify-between mt-2 text-xs text-gray-600">
-                        <span>Qté: {piece.Quantité}</span>
-                        <span>{piece.Fournisseur}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+              );
+            })()}
           </div>
         )}
       </div>
@@ -169,6 +185,14 @@ const DetailPanel = ({ item, employeesByMatricule, onClose }) => {
         <EmployeeDetailModal
           employee={selectedEmployee}
           onClose={() => setSelectedEmployee(null)}
+        />
+      )}
+
+      {/* Modal de détails pièce */}
+      {selectedPart && (
+        <PartDetailModal
+          part={selectedPart}
+          onClose={() => setSelectedPart(null)}
         />
       )}
     </div>
