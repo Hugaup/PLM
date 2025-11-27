@@ -103,6 +103,17 @@ const ProductionPlanning = ({ stages, partsByReference }) => {
       });
   }, [productionList]);
 
+  // Fonction pour extraire le délai maximum d'une chaîne comme "15-20 jours"
+  const extractMaxDelay = (delayString) => {
+    if (!delayString) return 0;
+    const match = delayString.toString().match(/(\d+)-(\d+)/);
+    if (match) {
+      return parseInt(match[2]); // Prendre le nombre maximum de la plage
+    }
+    const singleMatch = delayString.toString().match(/(\d+)/);
+    return singleMatch ? parseInt(singleMatch[1]) : 0;
+  };
+
   // Statistiques globales
   const stats = useMemo(() => {
     const insufficient = productionList.filter(p => !p.sufficient).length;
@@ -117,7 +128,7 @@ const ProductionPlanning = ({ stages, partsByReference }) => {
     // Stats pour les pièces manquantes
     const totalCost = missingParts.reduce((sum, p) => sum + p.totalCost, 0);
     const totalCAO = missingParts.reduce((sum, p) => sum + (p.caoTime * p.missing), 0);
-    const delays = missingParts.map(p => p.delai).filter(d => d && !isNaN(d));
+    const delays = missingParts.map(p => extractMaxDelay(p.delai)).filter(d => d > 0);
     const maxDelay = delays.length > 0 ? Math.max(...delays) : 0;
 
     return { insufficient, sufficient, critical, total: productionList.length, totalMissing, totalCost, totalCAO, maxDelay };
@@ -327,7 +338,7 @@ const ProductionPlanning = ({ stages, partsByReference }) => {
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-1 text-sm font-semibold text-gray-800">
                           <Clock className="w-4 h-4 text-yellow-600" />
-                          {item.delai} jours
+                          {item.delai}
                         </div>
                       </td>
                       <td className="px-4 py-3 text-center">

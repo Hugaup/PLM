@@ -14,6 +14,7 @@ import DetailPanel from './components/DetailPanel';
 import EmployeeDirectory from './components/EmployeeDirectory';
 import PartsDirectory from './components/PartsDirectory';
 import ProductionPlanning from './components/ProductionPlanning';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
 import workflowData from '../workflow_data.json';
 
 const nodeTypes = {
@@ -53,7 +54,7 @@ function App() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [viewMode, setViewMode] = useState('workflow'); // 'workflow' or 'detail'
-  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts' or 'production'
+  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts', 'production' or 'analytics'
 
   // Créer un index des employés par matricule pour un accès rapide
   const employeesByMatricule = useMemo(() => {
@@ -233,6 +234,19 @@ function App() {
         >
           🏭 Planification Production
         </button>
+        <button
+          onClick={() => {
+            setActiveTab('analytics');
+            setSelectedItem(null);
+          }}
+          className={`px-6 py-3 font-semibold transition-colors ${
+            activeTab === 'analytics'
+              ? 'border-b-2 border-purple-600 text-purple-600'
+              : 'text-gray-600 hover:text-gray-800'
+          }`}
+        >
+          📊 Analyse & Indicateurs
+        </button>
       </div>
 
       {/* Content */}
@@ -286,9 +300,16 @@ function App() {
           <EmployeeDirectory employees={workflowData.employees || []} />
         ) : activeTab === 'parts' ? (
           <PartsDirectory parts={workflowData.parts || []} />
-        ) : (
+        ) : activeTab === 'production' ? (
           <ProductionPlanning 
             stages={workflowData.stages || []} 
+            partsByReference={partsByReference}
+          />
+        ) : (
+          <AnalyticsDashboard 
+            stages={workflowData.stages || []} 
+            employees={workflowData.employees || []}
+            parts={workflowData.parts || []}
             partsByReference={partsByReference}
           />
         )}
