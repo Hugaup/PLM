@@ -17,4 +17,5 @@ dependencies = [
     "pillow>=11.1.0",
     "plotly>=6.5.0",
     "networkx>=3.6",
+    "ipykernel>=7.1.0",
 ]

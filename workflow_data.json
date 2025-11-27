@@ -1,0 +1,3887 @@
+{
+  "stages": [
+    {
+      "id": "stage_0",
+      "name": "Montage train atterissage",
+      "postes": [
+        {
+          "poste_id": 1,
+          "reference": "A018;C769;A259;A259;A259;A259;A623;A623",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:32:45",
+          "aleas": "Rupture outillage spécifique",
+          "cause": "Usure prématurée, maintenance différée",
+          "employees": [
+            {
+              "Matricule": "AIR0001",
+              "Prénom": "Jacques",
+              "Nom": "Petit",
+              "Qualification": "Expert Technique"
+            },
+            {
+              "Matricule": "AIR0057",
+              "Prénom": "Chen",
+              "Nom": "Lefebvre",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0113",
+              "Prénom": "Louis",
+              "Nom": "Garcia",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_1",
+      "name": "Assemblage moteur / fuselage / train atterissage",
+      "postes": [
+        {
+          "poste_id": 2,
+          "reference": "D088;D088;D234;A511;A511;A511;A337;A337;D277;A806;A806",
+          "temps_prevu": "00:45:00",
+          "temps_reel": "00:57:30",
+          "aleas": "Dysfonctionnement machine soudure",
+          "cause": "Défaut électronique, usure composants",
+          "employees": [
+            {
+              "Matricule": "AIR0002",
+              "Prénom": "François",
+              "Nom": "Lefebvre",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0058",
+              "Prénom": "Emma",
+              "Nom": "Simon",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0114",
+              "Prénom": "Jacques",
+              "Nom": "Vincent",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 3,
+          "reference": "A511;A511;A337;A337;A806;A416",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:41:15",
+          "aleas": "Problème température atelier",
+          "cause": "Climatisation défectueuse, isolation insuffisante",
+          "employees": [
+            {
+              "Matricule": "AIR0003",
+              "Prénom": "Nathalie",
+              "Nom": "Garcia",
+              "Qualification": "Technicien Confirmé"
+            },
+            {
+              "Matricule": "AIR0059",
+              "Prénom": "Luc",
+              "Nom": "Petit",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0115",
+              "Prénom": "Nathalie",
+              "Nom": "Fournier",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_2",
+      "name": "Assemblage visserie fuselage partie basse",
+      "postes": [
+        {
+          "poste_id": 4,
+          "reference": "A511;A511;A337;A337",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:20:45",
+          "aleas": "Défaillance contrôle qualité",
+          "cause": "Capteurs obsolètes, étalonnage incorrect",
+          "employees": [
+            {
+              "Matricule": "AIR0004",
+              "Prénom": "Martine",
+              "Nom": "Durand",
+              "Qualification": "Opérateur Qualifié"
+            },
+            {
+              "Matricule": "AIR0060",
+              "Prénom": "Chen",
+              "Nom": "Laurent",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0116",
+              "Prénom": "Raj",
+              "Nom": "Fournier",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_3",
+      "name": "Assemblage visserie train atterissage",
+      "postes": [
+        {
+          "poste_id": 5,
+          "reference": "A511;A337",
+          "temps_prevu": "00:10:00",
+          "temps_reel": "00:14:30",
+          "aleas": "Usure équipements serrage",
+          "cause": "Cycles intensifs, maintenance préventive insuffisante",
+          "employees": [
+            {
+              "Matricule": "AIR0005",
+              "Prénom": "Luc",
+              "Nom": "David",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0061",
+              "Prénom": "Julien",
+              "Nom": "Bernard",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0117",
+              "Prénom": "Jacques",
+              "Nom": "Fournier",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_4",
+      "name": "Assemblage fuselage centrale",
+      "postes": [
+        {
+          "poste_id": 6,
+          "reference": "C768;C768;A637;A637;D088",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:27:45",
+          "aleas": "Incident logiciel robots",
+          "cause": "Bugs de programmation, mise à jour incomplète",
+          "employees": [
+            {
+              "Matricule": "AIR0006",
+              "Prénom": "Isabelle",
+              "Nom": "Leroy",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0062",
+              "Prénom": "Louis",
+              "Nom": "Garcia",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0118",
+              "Prénom": "Chen",
+              "Nom": "Simon",
+              "Qualification": "Chef d'Équipe Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 7,
+          "reference": "C768;C768;A637;A637;D088",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:26:10",
+          "aleas": "Panne système ventilation",
+          "cause": "Filtres encrassés, moteurs en fin de vie",
+          "employees": [
+            {
+              "Matricule": "AIR0007",
+              "Prénom": "Jacques",
+              "Nom": "Laurent",
+              "Qualification": "Opérateur Spécialisé"
+            },
+            {
+              "Matricule": "AIR0063",
+              "Prénom": "Hiroshi",
+              "Nom": "Martin",
+              "Qualification": "Opérateur Junior"
+            },
+            {
+              "Matricule": "AIR0119",
+              "Prénom": "Yara",
+              "Nom": "Martin",
+              "Qualification": "Chef d'Équipe Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 8,
+          "reference": "A247;A247;A247;A247;A337;A337;A337;A337;A806;A806",
+          "temps_prevu": "00:35:00",
+          "temps_reel": "00:47:25",
+          "aleas": "Défaut synchronisation",
+          "cause": "Problèmes de communication inter-systèmes",
+          "employees": [
+            {
+              "Matricule": "AIR0008",
+              "Prénom": "Bernard",
+              "Nom": "Simon",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0064",
+              "Prénom": "Bernard",
+              "Nom": "Michel",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0120",
+              "Prénom": "Marie",
+              "Nom": "Richard",
+              "Qualification": "Chef d'Équipe Expert"
+            }
+          ]
+        },
+        {
+          "poste_id": 9,
+          "reference": "D088;D088;A806;A806;A511;A511;A511;A511;A337;A337;A337;A337",
+          "temps_prevu": "00:40:00",
+          "temps_reel": "00:54:20",
+          "aleas": "Interruption réseau",
+          "cause": "Infrastructure réseau obsolète, maintenance",
+          "employees": [
+            {
+              "Matricule": "AIR0009",
+              "Prénom": "Martine",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Confirmé"
+            },
+            {
+              "Matricule": "AIR0065",
+              "Prénom": "Jacques",
+              "Nom": "Roux",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0121",
+              "Prénom": "Bernard",
+              "Nom": "Durand",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_5",
+      "name": "Assemblage queue avion",
+      "postes": [
+        {
+          "poste_id": 10,
+          "reference": "A413;A413;C768;A806;A511;A637;A637;D277;D277;D277;D278",
+          "temps_prevu": "00:45:00",
+          "temps_reel": "01:02:15",
+          "aleas": "Incident manutention",
+          "cause": "Formation insuffisante, procédures inadaptées",
+          "employees": [
+            {
+              "Matricule": "AIR0010",
+              "Prénom": "Hélène",
+              "Nom": "Vincent",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0066",
+              "Prénom": "Chen",
+              "Nom": "Petit",
+              "Qualification": "Chef d'Équipe Expert"
+            },
+            {
+              "Matricule": "AIR0122",
+              "Prénom": "Marie",
+              "Nom": "Simon",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 11,
+          "reference": "A235;A417;A806;A637;A637;D277;D277",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:40:50",
+          "aleas": "Dérive calibration optique",
+          "cause": "Vieillissement optiques, environnement instable",
+          "employees": [
+            {
+              "Matricule": "AIR0011",
+              "Prénom": "Hiroshi",
+              "Nom": "Dubois",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0067",
+              "Prénom": "Bernard",
+              "Nom": "Moreau",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0123",
+              "Prénom": "François",
+              "Nom": "Simon",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 12,
+          "reference": "D122;A012;A637;A637;A337;D277",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:34:35",
+          "aleas": "Usure gabarits",
+          "cause": "Cycles répétitifs, matériaux inadaptés",
+          "employees": [
+            {
+              "Matricule": "AIR0012",
+              "Prénom": "Ahmed",
+              "Nom": "Durand",
+              "Qualification": "Technicien Confirmé"
+            },
+            {
+              "Matricule": "AIR0068",
+              "Prénom": "Aisha",
+              "Nom": "Thomas",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0124",
+              "Prénom": "Hélène",
+              "Nom": "Bernard",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 13,
+          "reference": "D145;A637;A337",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:21:45",
+          "aleas": "Contamination zone",
+          "cause": "Filtration insuffisante, procédures non respectées",
+          "employees": [
+            {
+              "Matricule": "AIR0013",
+              "Prénom": "Olivia",
+              "Nom": "Richard",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0069",
+              "Prénom": "Noah",
+              "Nom": "Thomas",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0125",
+              "Prénom": "Sophie",
+              "Nom": "Simon",
+              "Qualification": "Opérateur Junior"
+            }
+          ]
+        },
+        {
+          "poste_id": 14,
+          "reference": "A235;A417;A806;A637;A637;D277;D277",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:41:20",
+          "aleas": "Défaillance refroidissement",
+          "cause": "Circuit hydraulique dégradé, pompes usées",
+          "employees": [
+            {
+              "Matricule": "AIR0014",
+              "Prénom": "Julien",
+              "Nom": "Robert",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0070",
+              "Prénom": "Noah",
+              "Nom": "Robert",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0126",
+              "Prénom": "Antoine",
+              "Nom": "Laurent",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 15,
+          "reference": "A012;A637;A637;D277;A337;D278",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:35:10",
+          "aleas": "Perte traçabilité",
+          "cause": "Système d'information défectueux, procédures",
+          "employees": [
+            {
+              "Matricule": "AIR0015",
+              "Prénom": "Liam",
+              "Nom": "Lefebvre",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0071",
+              "Prénom": "Antoine",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0127",
+              "Prénom": "Priya",
+              "Nom": "Bertrand",
+              "Qualification": "Technicien Junior"
+            }
+          ]
+        },
+        {
+          "poste_id": 16,
+          "reference": "D145;A637;A337",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:22:30",
+          "aleas": "Dysfonctionnement guidage",
+          "cause": "Systèmes mécaniques usés, lubrification",
+          "employees": [
+            {
+              "Matricule": "AIR0016",
+              "Prénom": "Fatima",
+              "Nom": "Lefebvre",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0072",
+              "Prénom": "Sophie",
+              "Nom": "Bernard",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0128",
+              "Prénom": "Sophie",
+              "Nom": "Fournier",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 17,
+          "reference": "A511;A511;A511;A511;A337;A337;A337;A337",
+          "temps_prevu": "00:35:00",
+          "temps_reel": "00:48:45",
+          "aleas": "Incident maintenance",
+          "cause": "Planning inadapté, pièces non disponibles",
+          "employees": [
+            {
+              "Matricule": "AIR0017",
+              "Prénom": "Jean",
+              "Nom": "Michel",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0073",
+              "Prénom": "Liam",
+              "Nom": "Michel",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0129",
+              "Prénom": "Isabelle",
+              "Nom": "Leroy",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 18,
+          "reference": "A511;A337",
+          "temps_prevu": "00:10:00",
+          "temps_reel": "00:15:20",
+          "aleas": "Problème lubrification",
+          "cause": "Qualité lubrifiants, intervalles inadaptés",
+          "employees": [
+            {
+              "Matricule": "AIR0018",
+              "Prénom": "André",
+              "Nom": "Bertrand",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0074",
+              "Prénom": "Ahmed",
+              "Nom": "Durand",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0130",
+              "Prénom": "Isabelle",
+              "Nom": "Leroy",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_6",
+      "name": "Assemblage cockpit",
+      "postes": [
+        {
+          "poste_id": 19,
+          "reference": "A511;A511;A511;A337;A337;A337;D120;D119",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:42:15",
+          "aleas": "Défaut communication",
+          "cause": "Infrastructure réseau, protocoles obsolètes",
+          "employees": [
+            {
+              "Matricule": "AIR0019",
+              "Prénom": "Sophie",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Expert"
+            },
+            {
+              "Matricule": "AIR0075",
+              "Prénom": "Bernard",
+              "Nom": "Moreau",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0131",
+              "Prénom": "Claire",
+              "Nom": "Moreau",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_7",
+      "name": "Assemblage aile gauche",
+      "postes": [
+        {
+          "poste_id": 20,
+          "reference": "A415;A235;A637;A337;D116",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:36:40",
+          "aleas": "Déformation supports",
+          "cause": "Matériaux inadaptés, contraintes thermiques",
+          "employees": [
+            {
+              "Matricule": "AIR0020",
+              "Prénom": "Martine",
+              "Nom": "Moreau",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0076",
+              "Prénom": "Hélène",
+              "Nom": "Lefebvre",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0132",
+              "Prénom": "Bernard",
+              "Nom": "Moreau",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 21,
+          "reference": "A417;A417;D005;A637;A337;C483",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:35:50",
+          "aleas": "Impact variations pression",
+          "cause": "Systèmes de régulation défectueux",
+          "employees": [
+            {
+              "Matricule": "AIR0021",
+              "Prénom": "Claire",
+              "Nom": "Garcia",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0077",
+              "Prénom": "Bernard",
+              "Nom": "Bernard",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0133",
+              "Prénom": "Nathalie",
+              "Nom": "Fournier",
+              "Qualification": "Opérateur Junior"
+            }
+          ]
+        },
+        {
+          "poste_id": 22,
+          "reference": "A415;D005;A637;A637;A337;A337",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:34:35",
+          "aleas": "Défaillance contrôle qualité",
+          "cause": "Capteurs obsolètes, étalonnage incorrect",
+          "employees": [
+            {
+              "Matricule": "AIR0022",
+              "Prénom": "Martine",
+              "Nom": "Leroy",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0078",
+              "Prénom": "Diego",
+              "Nom": "Roux",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0134",
+              "Prénom": "Raj",
+              "Nom": "Dubois",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 23,
+          "reference": "A415;A235;A637;A637;A337;A337;D117",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:42:20",
+          "aleas": "Incident ventilation",
+          "cause": "Filtres encrassés, moteurs défaillants",
+          "employees": [
+            {
+              "Matricule": "AIR0023",
+              "Prénom": "Alice",
+              "Nom": "Durand",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0079",
+              "Prénom": "Jacques",
+              "Nom": "Vincent",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0135",
+              "Prénom": "Paul",
+              "Nom": "Petit",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 24,
+          "reference": "D005;D005",
+          "temps_prevu": "00:10:00",
+          "temps_reel": "00:15:30",
+          "aleas": "Dérive calibration",
+          "cause": "Vieillissement instruments, environnement",
+          "employees": [
+            {
+              "Matricule": "AIR0024",
+              "Prénom": "Emma",
+              "Nom": "Petit",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0080",
+              "Prénom": "Bernard",
+              "Nom": "Garcia",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0136",
+              "Prénom": "Alice",
+              "Nom": "Thomas",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 25,
+          "reference": "A415;C775;D005",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:22:45",
+          "aleas": "Contamination",
+          "cause": "Procédures de nettoyage insuffisantes",
+          "employees": [
+            {
+              "Matricule": "AIR0025",
+              "Prénom": "Miguel",
+              "Nom": "Thomas",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0081",
+              "Prénom": "Claire",
+              "Nom": "Leroy",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0137",
+              "Prénom": "Camille",
+              "Nom": "Durand",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 26,
+          "reference": "A637;A637;A637;A337;A337;A337",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:36:10",
+          "aleas": "Dysfonctionnement transport",
+          "cause": "Systèmes mécaniques usés, maintenance",
+          "employees": [
+            {
+              "Matricule": "AIR0026",
+              "Prénom": "Aisha",
+              "Nom": "Vincent",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0082",
+              "Prénom": "Martine",
+              "Nom": "David",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0138",
+              "Prénom": "Paul",
+              "Nom": "Moreau",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_8",
+      "name": "Assemblage réacteurs",
+      "postes": [
+        {
+          "poste_id": 27,
+          "reference": "D142;D142;D142;D142;A437;A437;A437;A437;A637;A637;A637;A637;A337;A337;A337;A337",
+          "temps_prevu": "01:00:00",
+          "temps_reel": "01:22:30",
+          "aleas": "Surchauffe critique",
+          "cause": "Systèmes de refroidissement inadaptés",
+          "employees": [
+            {
+              "Matricule": "AIR0027",
+              "Prénom": "Miguel",
+              "Nom": "Martin",
+              "Qualification": "Chef d'Équipe Expert"
+            },
+            {
+              "Matricule": "AIR0083",
+              "Prénom": "Jean",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0139",
+              "Prénom": "Aisha",
+              "Nom": "Simon",
+              "Qualification": "Chef d'Équipe Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_9",
+      "name": "Fixation réacteur aile gauche",
+      "postes": [
+        {
+          "poste_id": 28,
+          "reference": "A806;A511;A637;A337;A337;A138",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:35:40",
+          "aleas": "Perte référencement",
+          "cause": "Système d'information, traçabilité",
+          "employees": [
+            {
+              "Matricule": "AIR0028",
+              "Prénom": "Bernard",
+              "Nom": "Bernard",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0084",
+              "Prénom": "Hélène",
+              "Nom": "Lefebvre",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0140",
+              "Prénom": "Nathalie",
+              "Nom": "Simon",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 29,
+          "reference": "A637;A637;A337;A337",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:28:50",
+          "aleas": "Usure systèmes serrage",
+          "cause": "Cycles intensifs, maintenance différée",
+          "employees": [
+            {
+              "Matricule": "AIR0029",
+              "Prénom": "Chen",
+              "Nom": "Martin",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0085",
+              "Prénom": "Miguel",
+              "Nom": "David",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0141",
+              "Prénom": "Raj",
+              "Nom": "Petit",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 30,
+          "reference": "A637;A637;A337;A337",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:29:10",
+          "aleas": "Incident électrique",
+          "cause": "Vétusté infrastructure, surtensions",
+          "employees": [
+            {
+              "Matricule": "AIR0030",
+              "Prénom": "Louis",
+              "Nom": "Durand",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0086",
+              "Prénom": "Antoine",
+              "Nom": "Robert",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0142",
+              "Prénom": "Omar",
+              "Nom": "Simon",
+              "Qualification": "Technicien Junior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_10",
+      "name": "Assemblage train atterissage gauche",
+      "postes": [
+        {
+          "poste_id": 31,
+          "reference": "A018;A018;A018;A018;A259;A259;A259;A259;A259;A259;A259;A259;A623;A623;A623;A623;A623;A623;A623;A623;A423;A423",
+          "temps_prevu": "01:30:00",
+          "temps_reel": "02:07:45",
+          "aleas": "Défaillance majeure systèmes",
+          "cause": "Obsolescence générale, sous-investissement",
+          "employees": [
+            {
+              "Matricule": "AIR0031",
+              "Prénom": "Alice",
+              "Nom": "Michel",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0087",
+              "Prénom": "Camille",
+              "Nom": "Dubois",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0143",
+              "Prénom": "Jacques",
+              "Nom": "Richard",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 32,
+          "reference": "A637;A012",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:21:45",
+          "aleas": "Problème communication inter-systèmes",
+          "cause": "Protocoles incompatibles, interfaces",
+          "employees": [
+            {
+              "Matricule": "AIR0032",
+              "Prénom": "Pierre",
+              "Nom": "Lefebvre",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0088",
+              "Prénom": "Marie",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Expert"
+            },
+            {
+              "Matricule": "AIR0144",
+              "Prénom": "Diego",
+              "Nom": "Richard",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 33,
+          "reference": "A637;A012;D277",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:22:30",
+          "aleas": "Dysfonctionnement guidage automatisé",
+          "cause": "Logiciels obsolètes, bugs",
+          "employees": [
+            {
+              "Matricule": "AIR0033",
+              "Prénom": "Isabelle",
+              "Nom": "Petit",
+              "Qualification": "Opérateur Junior"
+            },
+            {
+              "Matricule": "AIR0089",
+              "Prénom": "Hana",
+              "Nom": "Bertrand",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0145",
+              "Prénom": "Priya",
+              "Nom": "Fournier",
+              "Qualification": "Opérateur Junior"
+            }
+          ]
+        },
+        {
+          "poste_id": 34,
+          "reference": "A413;A238;A247;A138;A138;A138;A337",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:42:15",
+          "aleas": "Contamination zone travail sensible",
+          "cause": "Filtration insuffisante, procédures",
+          "employees": [
+            {
+              "Matricule": "AIR0034",
+              "Prénom": "Jacques",
+              "Nom": "Laurent",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0090",
+              "Prénom": "Louis",
+              "Nom": "Robert",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0146",
+              "Prénom": "Louis",
+              "Nom": "Thomas",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_11",
+      "name": "Fixation aile gauche avion / train atterissage",
+      "postes": [
+        {
+          "poste_id": 35,
+          "reference": "A637;A637;A337;A337",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:20:45",
+          "aleas": "Défaillance critique système contrôle",
+          "cause": "Capteurs défectueux, étalonnage",
+          "employees": [
+            {
+              "Matricule": "AIR0035",
+              "Prénom": "Liam",
+              "Nom": "Durand",
+              "Qualification": "Technicien Technique"
+            },
+            {
+              "Matricule": "AIR0091",
+              "Prénom": "Marie",
+              "Nom": "Garcia",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0147",
+              "Prénom": "Olivia",
+              "Nom": "Lefebvre",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_12",
+      "name": "Assemblage aile droite",
+      "postes": [
+        {
+          "poste_id": 36,
+          "reference": "A415;A235;A637;A337;D116",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:36:10",
+          "aleas": "Usure prématurée outillages précision",
+          "cause": "Cycles intensifs, matériaux inadaptés",
+          "employees": [
+            {
+              "Matricule": "AIR0036",
+              "Prénom": "Hana",
+              "Nom": "Simon",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0092",
+              "Prénom": "Paul",
+              "Nom": "Moreau",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0148",
+              "Prénom": "Hana",
+              "Nom": "Petit",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 37,
+          "reference": "A417;A417;D005;A637;A337;C483",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:35:50",
+          "aleas": "Impact variations thermiques",
+          "cause": "Systèmes de régulation insuffisants",
+          "employees": [
+            {
+              "Matricule": "AIR0037",
+              "Prénom": "Antoine",
+              "Nom": "Durand",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0093",
+              "Prénom": "Bernard",
+              "Nom": "Robert",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0149",
+              "Prénom": "Miguel",
+              "Nom": "Lefebvre",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 38,
+          "reference": "A415;D005;A637;A637;A337;A337",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:34:35",
+          "aleas": "Désynchronisation postes travail",
+          "cause": "Systèmes de communication",
+          "employees": [
+            {
+              "Matricule": "AIR0038",
+              "Prénom": "François",
+              "Nom": "Durand",
+              "Qualification": "Technicien Senior"
+            },
+            {
+              "Matricule": "AIR0094",
+              "Prénom": "Hélène",
+              "Nom": "Richard",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0150",
+              "Prénom": "Yara",
+              "Nom": "Fournier",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 39,
+          "reference": "A415;A235;A637;A637;A337;A337;D117",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:41:20",
+          "aleas": "Incident ventilation affectant qualité",
+          "cause": "Filtration, régulation température",
+          "employees": [
+            {
+              "Matricule": "AIR0039",
+              "Prénom": "Marie",
+              "Nom": "Moreau",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0095",
+              "Prénom": "Martine",
+              "Nom": "Garcia",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 40,
+          "reference": "D005;D005",
+          "temps_prevu": "00:10:00",
+          "temps_reel": "00:15:20",
+          "aleas": "Dérive calibration instruments",
+          "cause": "Vieillissement, environnement instable",
+          "employees": [
+            {
+              "Matricule": "AIR0040",
+              "Prénom": "Carlos",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0096",
+              "Prénom": "Jacques",
+              "Nom": "Petit",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 41,
+          "reference": "A415;C775;D005",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:22:45",
+          "aleas": "Contamination zones critiques",
+          "cause": "Procédures de nettoyage, filtration",
+          "employees": [
+            {
+              "Matricule": "AIR0041",
+              "Prénom": "Ethan",
+              "Nom": "Richard",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0097",
+              "Prénom": "Camille",
+              "Nom": "Roux",
+              "Qualification": "Chef d'Équipe Expert"
+            }
+          ]
+        },
+        {
+          "poste_id": 42,
+          "reference": "A637;A637;A637;A337;A337;A337",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:36:40",
+          "aleas": "Dysfonctionnement transport pièces",
+          "cause": "Systèmes mécaniques, maintenance",
+          "employees": [
+            {
+              "Matricule": "AIR0042",
+              "Prénom": "André",
+              "Nom": "Petit",
+              "Qualification": "Chef d'Équipe Junior"
+            },
+            {
+              "Matricule": "AIR0098",
+              "Prénom": "Luc",
+              "Nom": "Durand",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_13",
+      "name": "Fixation réacteur aile droite",
+      "postes": [
+        {
+          "poste_id": 43,
+          "reference": "A806;A511;A637;A337;A337;A138",
+          "temps_prevu": "00:25:00",
+          "temps_reel": "00:35:10",
+          "aleas": "Défaillance protocoles sécurité industrielle",
+          "cause": "Mise à jour, formation",
+          "employees": [
+            {
+              "Matricule": "AIR0043",
+              "Prénom": "Hiroshi",
+              "Nom": "Fournier",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0099",
+              "Prénom": "Camille",
+              "Nom": "Fournier",
+              "Qualification": "Chef d'Équipe Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 44,
+          "reference": "A637;A637;A337;A337",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:28:50",
+          "aleas": "Problème calibration systèmes",
+          "cause": "Instruments obsolètes, dérive",
+          "employees": [
+            {
+              "Matricule": "AIR0044",
+              "Prénom": "Luc",
+              "Nom": "Roux",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0100",
+              "Prénom": "Isabelle",
+              "Nom": "Moreau",
+              "Qualification": "Chef d'Équipe Expert"
+            }
+          ]
+        },
+        {
+          "poste_id": 45,
+          "reference": "A637;A637;A337;A337",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:29:10",
+          "aleas": "Impact vibrations sur précision",
+          "cause": "Systèmes anti-vibration insuffisants",
+          "employees": [
+            {
+              "Matricule": "AIR0045",
+              "Prénom": "Jean",
+              "Nom": "Roux",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0101",
+              "Prénom": "Antoine",
+              "Nom": "Bertrand",
+              "Qualification": "Chef d'Équipe Expert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_14",
+      "name": "Assemblage train atterissage droit",
+      "postes": [
+        {
+          "poste_id": 46,
+          "reference": "A637;A012",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:21:45",
+          "aleas": "Perte traçabilité composants",
+          "cause": "Système d'information, procédures",
+          "employees": [
+            {
+              "Matricule": "AIR0046",
+              "Prénom": "Pierre",
+              "Nom": "Vincent",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0102",
+              "Prénom": "André",
+              "Nom": "Laurent",
+              "Qualification": "Chef d'Équipe Technique"
+            }
+          ]
+        },
+        {
+          "poste_id": 47,
+          "reference": "A637;A012;D277",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:22:30",
+          "aleas": "Dysfonctionnement systèmes guidage",
+          "cause": "Systèmes mécaniques, logiciels",
+          "employees": [
+            {
+              "Matricule": "AIR0047",
+              "Prénom": "Hana",
+              "Nom": "Martin",
+              "Qualification": "Opérateur Junior"
+            },
+            {
+              "Matricule": "AIR0103",
+              "Prénom": "Luc",
+              "Nom": "Vincent",
+              "Qualification": "Opérateur Senior"
+            }
+          ]
+        },
+        {
+          "poste_id": 48,
+          "reference": "A413;A238;A247;A138;A138;A138;A337",
+          "temps_prevu": "00:30:00",
+          "temps_reel": "00:42:15",
+          "aleas": "Contamination environnement production",
+          "cause": "Filtration, procédures",
+          "employees": [
+            {
+              "Matricule": "AIR0048",
+              "Prénom": "Noah",
+              "Nom": "Laurent",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0104",
+              "Prénom": "Bernard",
+              "Nom": "Michel",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_15",
+      "name": "Fixation aile droit avion / train atterissage",
+      "postes": [
+        {
+          "poste_id": 49,
+          "reference": "A637;A637;A337;A337",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:20:45",
+          "aleas": "Défaillance critique contrôle qualité",
+          "cause": "Capteurs, protocoles",
+          "employees": [
+            {
+              "Matricule": "AIR0049",
+              "Prénom": "Raj",
+              "Nom": "Lefebvre",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0105",
+              "Prénom": "Ahmed",
+              "Nom": "Vincent",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_16",
+      "name": "Fixation bout ailes",
+      "postes": [
+        {
+          "poste_id": 50,
+          "reference": "D010;D010;D010;D010",
+          "temps_prevu": "00:20:00",
+          "temps_reel": "00:28:30",
+          "aleas": "Dérive paramètres production",
+          "cause": "Systèmes de régulation",
+          "employees": [
+            {
+              "Matricule": "AIR0050",
+              "Prénom": "Nathalie",
+              "Nom": "Roux",
+              "Qualification": "Chef d'Équipe Expert"
+            },
+            {
+              "Matricule": "AIR0106",
+              "Prénom": "Jacques",
+              "Nom": "Roux",
+              "Qualification": "Technicien Senior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_17",
+      "name": "Passage faisceaux électrique ailes",
+      "postes": [
+        {
+          "poste_id": 51,
+          "reference": null,
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:21:45",
+          "aleas": "Problème connectique électrique",
+          "cause": "Vétusté, oxydation",
+          "employees": [
+            {
+              "Matricule": "AIR0051",
+              "Prénom": "Nathalie",
+              "Nom": "Martin",
+              "Qualification": "Technicien Junior"
+            },
+            {
+              "Matricule": "AIR0107",
+              "Prénom": "Isabelle",
+              "Nom": "Roux",
+              "Qualification": "Opérateur Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_18",
+      "name": "Fixation lumières bout ailes",
+      "postes": [
+        {
+          "poste_id": 52,
+          "reference": "A511;A511;A337;A337",
+          "temps_prevu": "00:15:00",
+          "temps_reel": "00:22:30",
+          "aleas": "Défaut adhérence supports",
+          "cause": "Qualité matériaux, conditions",
+          "employees": [
+            {
+              "Matricule": "AIR0052",
+              "Prénom": "Bernard",
+              "Nom": "Petit",
+              "Qualification": "Chef d'Équipe Technique"
+            },
+            {
+              "Matricule": "AIR0108",
+              "Prénom": "Alice",
+              "Nom": "Lefebvre",
+              "Qualification": "Technicien Technique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_19",
+      "name": "Stickers cockpit",
+      "postes": [
+        {
+          "poste_id": 53,
+          "reference": "C995",
+          "temps_prevu": "00:05:00",
+          "temps_reel": "00:07:15",
+          "aleas": "Problème impression marquages",
+          "cause": "Systèmes impression, maintenance",
+          "employees": [
+            {
+              "Matricule": "AIR0053",
+              "Prénom": "Martine",
+              "Nom": "Dubois",
+              "Qualification": "Opérateur Senior"
+            },
+            {
+              "Matricule": "AIR0109",
+              "Prénom": "Isabelle",
+              "Nom": "Robert",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ],
+          "pieces": [
+            {
+              "Code / Référence": "C995",
+              "Désignation": "Stickers_Peinture_Avion",
+              "Quantité": 1,
+              "Fournisseur": "3M Aerospace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_20",
+      "name": "Stickers réacteur",
+      "postes": [
+        {
+          "poste_id": 54,
+          "reference": "C995",
+          "temps_prevu": "00:05:00",
+          "temps_reel": "00:07:30",
+          "aleas": "Défaut positionnement étiquettes",
+          "cause": "Systèmes automatisation",
+          "employees": [
+            {
+              "Matricule": "AIR0054",
+              "Prénom": "Diego",
+              "Nom": "Thomas",
+              "Qualification": "Opérateur Junior"
+            },
+            {
+              "Matricule": "AIR0110",
+              "Prénom": "Hana",
+              "Nom": "Simon",
+              "Qualification": "Chef d'Équipe Technique"
+            }
+          ],
+          "pieces": [
+            {
+              "Code / Référence": "C995",
+              "Désignation": "Stickers_Peinture_Avion",
+              "Quantité": 1,
+              "Fournisseur": "3M Aerospace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_21",
+      "name": "Stickers fuselage gauche",
+      "postes": [
+        {
+          "poste_id": 55,
+          "reference": "C995",
+          "temps_prevu": "00:05:00",
+          "temps_reel": "00:07:15",
+          "aleas": "Instabilité processus marquage",
+          "cause": "Paramètres machines, maintenance",
+          "employees": [
+            {
+              "Matricule": "AIR0055",
+              "Prénom": "Jacques",
+              "Nom": "Dubois",
+              "Qualification": "Opérateur Technique"
+            },
+            {
+              "Matricule": "AIR0111",
+              "Prénom": "Sophie",
+              "Nom": "Lefebvre",
+              "Qualification": "Chef d'Équipe Senior"
+            }
+          ],
+          "pieces": [
+            {
+              "Code / Référence": "C995",
+              "Désignation": "Stickers_Peinture_Avion",
+              "Quantité": 1,
+              "Fournisseur": "3M Aerospace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_22",
+      "name": "Stickers fuselage droit",
+      "postes": [
+        {
+          "poste_id": 56,
+          "reference": "C995",
+          "temps_prevu": "00:05:00",
+          "temps_reel": "00:07:30",
+          "aleas": "Erreur placement stickers",
+          "cause": "Systèmes automatisation, calibration",
+          "employees": [
+            {
+              "Matricule": "AIR0056",
+              "Prénom": "Camille",
+              "Nom": "Michel",
+              "Qualification": "Chef d'Équipe Senior"
+            },
+            {
+              "Matricule": "AIR0112",
+              "Prénom": "Louis",
+              "Nom": "Leroy",
+              "Qualification": "Opérateur Senior"
+            }
+          ],
+          "pieces": [
+            {
+              "Code / Référence": "C995",
+              "Désignation": "Stickers_Peinture_Avion",
+              "Quantité": 1,
+              "Fournisseur": "3M Aerospace"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": {},
+  "employees": [
+    {
+      "Matricule": "AIR0001",
+      "Prénom": "Jacques",
+      "Nom": "Petit",
+      "Âge": 49,
+      "Qualification": "Expert Technique",
+      "Poste de montage": "Poste 1",
+      "Description du poste": "Travail sur Poste 1, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Montage mécanique Niveau 3, Lecture plan Niveau 3",
+      "Habilitations": "Pneumatique Certifié",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 55 | Semaine 3: Poste 50",
+      "Commentaire de Carrière": "Technicien aéronautique ayant débuté comme opérateur, a progressivement gravi les échelons pour devenir expert technique en maintenance des trains d'atterrissage, capitalisant 25 ans d'expérience."
+    },
+    {
+      "Matricule": "AIR0002",
+      "Prénom": "François",
+      "Nom": "Lefebvre",
+      "Âge": 24,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 2",
+      "Description du poste": "Travail sur Poste 2, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Lecture plan Niveau 1, Assemblage Niveau 1",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 7 | Semaine 2: Poste 11",
+      "Commentaire de Carrière": "Jeune diplômé fraîchement arrivé, en phase d'apprentissage des systèmes électroniques embarqués, montrant un potentiel prometteur pour l'innovation technologique."
+    },
+    {
+      "Matricule": "AIR0003",
+      "Prénom": "Nathalie",
+      "Nom": "Garcia",
+      "Âge": 39,
+      "Qualification": "Technicien Confirmé",
+      "Poste de montage": "Poste 3",
+      "Description du poste": "Travail sur Poste 3, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Soudure Niveau 2, Contrôle qualité Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 35.75,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 14 | Semaine 2: Poste 56",
+      "Commentaire de Carrière": "Professionnelle rigoureuse ayant développé une expertise en contrôle qualité, a progressivement construit des processus innovants dans l'assemblage aéronautique."
+    },
+    {
+      "Matricule": "AIR0004",
+      "Prénom": "Martine",
+      "Nom": "Durand",
+      "Âge": 37,
+      "Qualification": "Opérateur Qualifié",
+      "Poste de montage": "Poste 4",
+      "Description du poste": "Travail sur Poste 4, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 1, Montage mécanique Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 33.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 32 | Semaine 2: Poste 5",
+      "Commentaire de Carrière": "Opératrice polyvalente, spécialisée dans la coordination précise des tâches d'assemblage, maîtrisant les différentes étapes de production."
+    },
+    {
+      "Matricule": "AIR0005",
+      "Prénom": "Luc",
+      "Nom": "David",
+      "Âge": 37,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 5",
+      "Description du poste": "Travail sur Poste 5, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 36.75,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 26 | Semaine 2: Poste 35",
+      "Commentaire de Carrière": "Technicien méthodique passé chef d'équipe, reconnu pour sa capacité à garantir la précision dimensionnelle et la conformité des composants critiques."
+    },
+    {
+      "Matricule": "AIR0006",
+      "Prénom": "Isabelle",
+      "Nom": "Leroy",
+      "Âge": 45,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 6",
+      "Description du poste": "Travail sur Poste 6, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage mécanique Niveau 3, Assemblage Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 3: Poste 54",
+      "Commentaire de Carrière": "Professionnelle expérimentée ayant participé à plusieurs programmes de modernisation des chaînes d'assemblage, devenue référence opérationnelle senior."
+    },
+    {
+      "Matricule": "AIR0007",
+      "Prénom": "Jacques",
+      "Nom": "Laurent",
+      "Âge": 41,
+      "Qualification": "Opérateur Spécialisé",
+      "Poste de montage": "Poste 7",
+      "Description du poste": "Travail sur Poste 7, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Assemblage Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 35.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 27 | Semaine 2: Poste 16",
+      "Commentaire de Carrière": "Spécialiste des processus de production, a développé une expertise fine dans l'optimisation des méthodes d'assemblage aéronautique."
+    },
+    {
+      "Matricule": "AIR0008",
+      "Prénom": "Bernard",
+      "Nom": "Simon",
+      "Âge": 23,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 8",
+      "Description du poste": "Travail sur Poste 8, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Assemblage Niveau 1",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 30.25,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 41 | Semaine 2: Poste 45",
+      "Commentaire de Carrière": "Jeune technicien débutant, en formation intensive sur les systèmes électroniques embarqués, montrant un potentiel d'apprentissage rapide."
+    },
+    {
+      "Matricule": "AIR0009",
+      "Prénom": "Martine",
+      "Nom": "Vincent",
+      "Âge": 42,
+      "Qualification": "Chef d'Équipe Confirmé",
+      "Poste de montage": "Poste 9",
+      "Description du poste": "Travail sur Poste 9, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Assemblage Niveau 2, Montage mécanique Niveau 2, Montage électrique Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 40.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 4 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Experte en gestion stratégique des approvisionnements, a construit une solide réputation dans la coordination des composants aéronautiques."
+    },
+    {
+      "Matricule": "AIR0010",
+      "Prénom": "Hélène",
+      "Nom": "Vincent",
+      "Âge": 49,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 10",
+      "Description du poste": "Travail sur Poste 10, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 15 | Semaine 2: Poste 50",
+      "Commentaire de Carrière": "Technicienne senior reconnue pour son expertise technique et son rôle central dans le contrôle qualité des productions aéronautiques."
+    },
+    {
+      "Matricule": "AIR0011",
+      "Prénom": "Hiroshi",
+      "Nom": "Dubois",
+      "Âge": 33,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 11",
+      "Description du poste": "Travail sur Poste 11, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 15 | Semaine 2: Poste 40",
+      "Commentaire de Carrière": "Spécialiste en robotique, a développé des systèmes d'automatisation avancés pour l'assemblage, passant de technicien à chef d'équipe technique."
+    },
+    {
+      "Matricule": "AIR0012",
+      "Prénom": "Ahmed",
+      "Nom": "Durand",
+      "Âge": 39,
+      "Qualification": "Technicien Confirmé",
+      "Poste de montage": "Poste 12",
+      "Description du poste": "Travail sur Poste 12, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Montage électrique Niveau 2, Assemblage Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Pneumatique, Hydraulique",
+      "Coût horaire (€)": 35.75,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 32 | Semaine 2: Poste 6",
+      "Commentaire de Carrière": "Expert en logistique industrielle, a optimisé les flux de production aéronautique grâce à une compréhension approfondie des processus."
+    },
+    {
+      "Matricule": "AIR0013",
+      "Prénom": "Olivia",
+      "Nom": "Richard",
+      "Âge": 24,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 13",
+      "Description du poste": "Travail sur Poste 13, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 1, Lecture plan Niveau 1",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 35.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 30 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Jeune ingénieure spécialisée dans les matériaux composites, en début de carrière avec un fort potentiel d'innovation."
+    },
+    {
+      "Matricule": "AIR0014",
+      "Prénom": "Julien",
+      "Nom": "Robert",
+      "Âge": 38,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 14",
+      "Description du poste": "Travail sur Poste 14, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Montage mécanique Niveau 2, Assemblage Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Mécanique, Pneumatique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 52 | Semaine 2: Poste 17",
+      "Commentaire de Carrière": "Spécialiste en systèmes de guidage et navigation, a développé des technologies de pointe et progressé vers un rôle de chef d'équipe."
+    },
+    {
+      "Matricule": "AIR0015",
+      "Prénom": "Liam",
+      "Nom": "Lefebvre",
+      "Âge": 47,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 15",
+      "Description du poste": "Travail sur Poste 15, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Contrôle qualité Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 40.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 4 | Semaine 2: Poste 38",
+      "Commentaire de Carrière": "Opérateur senior ayant transformé les stratégies de maintenance préventive, devenu une référence dans l'optimisation des équipements."
+    },
+    {
+      "Matricule": "AIR0016",
+      "Prénom": "Fatima",
+      "Nom": "Lefebvre",
+      "Âge": 32,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 16",
+      "Description du poste": "Travail sur Poste 16, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 54 | Semaine 2: Poste 13",
+      "Commentaire de Carrière": "Spécialiste des architectures électroniques complexes, a construit une expertise technique solide au fil des années."
+    },
+    {
+      "Matricule": "AIR0017",
+      "Prénom": "Jean",
+      "Nom": "Michel",
+      "Âge": 28,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 17",
+      "Description du poste": "Travail sur Poste 17, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 33.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 28 | Semaine 2: Poste 37",
+      "Commentaire de Carrière": "Technicien précis, expert en assemblage de composants sensibles, reconnu pour sa rigueur et sa méthodologie."
+    },
+    {
+      "Matricule": "AIR0018",
+      "Prénom": "André",
+      "Nom": "Bertrand",
+      "Âge": 57,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 18",
+      "Description du poste": "Travail sur Poste 18, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 3, Soudure Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 16 | Semaine 2: Poste 22",
+      "Commentaire de Carrière": "Directeur de production avec plus de 30 ans d'expérience, ayant traversé et guidé plusieurs mutations technologiques de l'industrie."
+    },
+    {
+      "Matricule": "AIR0019",
+      "Prénom": "Sophie",
+      "Nom": "Vincent",
+      "Âge": 56,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 19",
+      "Description du poste": "Travail sur Poste 19, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 44.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 4 | Semaine 3: Poste 54",
+      "Commentaire de Carrière": "Consultante senior en stratégie industrielle, conseillant les directions de grands groupes aéronautiques après une carrière riche."
+    },
+    {
+      "Matricule": "AIR0020",
+      "Prénom": "Martine",
+      "Nom": "Moreau",
+      "Âge": 33,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 20",
+      "Description du poste": "Travail sur Poste 20, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 9 | Semaine 2: Poste 1",
+      "Commentaire de Carrière": "Spécialiste en optimisation des processus de production, ayant développé une approche méthodique de l'amélioration continue."
+    },
+    {
+      "Matricule": "AIR0021",
+      "Prénom": "Claire",
+      "Nom": "Garcia",
+      "Âge": 47,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 21",
+      "Description du poste": "Travail sur Poste 21, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 52 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Responsable recherche et développement, a piloté de nombreux projets d'innovation technologique, devenue une référence dans la R&D aéronautique."
+    },
+    {
+      "Matricule": "AIR0022",
+      "Prénom": "Martine",
+      "Nom": "Leroy",
+      "Âge": 31,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 22",
+      "Description du poste": "Travail sur Poste 22, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Lecture plan Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 34.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 39 | Semaine 2: Poste 30",
+      "Commentaire de Carrière": "Experte en gestion de projet, a développé une expertise dans la transformation digitale des processus industriels."
+    },
+    {
+      "Matricule": "AIR0023",
+      "Prénom": "Alice",
+      "Nom": "Durand",
+      "Âge": 28,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 23",
+      "Description du poste": "Travail sur Poste 23, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 18 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Jeune ingénieure prometteuse en systèmes de propulsion, en phase d'apprentissage et de développement de technologies innovantes."
+    },
+    {
+      "Matricule": "AIR0024",
+      "Prénom": "Emma",
+      "Nom": "Petit",
+      "Âge": 35,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 24",
+      "Description du poste": "Travail sur Poste 24, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Montage électrique Niveau 2, Montage mécanique Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 35 | Semaine 2: Poste 52",
+      "Commentaire de Carrière": "Cheffe de projet en intégration des systèmes avioniques, ayant rapidement progressé grâce à ses compétences techniques et managériales."
+    },
+    {
+      "Matricule": "AIR0025",
+      "Prénom": "Miguel",
+      "Nom": "Thomas",
+      "Âge": 48,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 25",
+      "Description du poste": "Travail sur Poste 25, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Montage électrique Niveau 2",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 34 | Semaine 2: Poste 36",
+      "Commentaire de Carrière": "Responsable des essais et certification, garant de la conformité technique des productions aéronautiques."
+    },
+    {
+      "Matricule": "AIR0026",
+      "Prénom": "Aisha",
+      "Nom": "Vincent",
+      "Âge": 56,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 26",
+      "Description du poste": "Travail sur Poste 26, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Pneumatique, Mécanique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 14 | Semaine 2: Poste 35",
+      "Commentaire de Carrière": "Experte en stratégie industrielle, a conseillé plusieurs grands constructeurs aéronautiques au cours de sa carrière."
+    },
+    {
+      "Matricule": "AIR0027",
+      "Prénom": "Miguel",
+      "Nom": "Martin",
+      "Âge": 49,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 27",
+      "Description du poste": "Travail sur Poste 27, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 43.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 23 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Directeur technique ayant piloté plusieurs programmes de développement majeurs, reconnu pour son leadership et son innovation."
+    },
+    {
+      "Matricule": "AIR0028",
+      "Prénom": "Bernard",
+      "Nom": "Bernard",
+      "Âge": 48,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 28",
+      "Description du poste": "Travail sur Poste 28, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Montage électrique Niveau 3, Montage mécanique Niveau 3, Lecture plan Niveau 3",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 31 | Semaine 2: Poste 49",
+      "Commentaire de Carrière": "Ingénieur méthodes spécialisé dans la conception de processus de production innovants."
+    },
+    {
+      "Matricule": "AIR0029",
+      "Prénom": "Chen",
+      "Nom": "Martin",
+      "Âge": 25,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 29",
+      "Description du poste": "Travail sur Poste 29, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Montage mécanique Niveau 1",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 23 | Semaine 2: Poste 25",
+      "Commentaire de Carrière": "Jeune talent en conception de systèmes embarqués, montrant un potentiel prometteur d'innovation technologique."
+    },
+    {
+      "Matricule": "AIR0030",
+      "Prénom": "Louis",
+      "Nom": "Durand",
+      "Âge": 44,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 30",
+      "Description du poste": "Travail sur Poste 30, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Contrôle qualité Niveau 2, Montage électrique Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 38 | Semaine 2: Poste 2",
+      "Commentaire de Carrière": "Expert en gestion des approvisionnements stratégiques, ayant optimisé les flux logistiques aéronautiques."
+    },
+    {
+      "Matricule": "AIR0031",
+      "Prénom": "Alice",
+      "Nom": "Michel",
+      "Âge": 28,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 31",
+      "Description du poste": "Travail sur Poste 31, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 35.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 26 | Semaine 2: Poste 27",
+      "Commentaire de Carrière": "Ingénieure en systèmes de contrôle qualité, reconnue pour sa rigueur et sa méthodologie."
+    },
+    {
+      "Matricule": "AIR0032",
+      "Prénom": "Pierre",
+      "Nom": "Lefebvre",
+      "Âge": 39,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 32",
+      "Description du poste": "Travail sur Poste 32, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Montage mécanique Niveau 2, Assemblage Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 56 | Semaine 2: Poste 28",
+      "Commentaire de Carrière": "Responsable maintenance préventive, ayant développé des stratégies d'optimisation de la fiabilité des équipements."
+    },
+    {
+      "Matricule": "AIR0033",
+      "Prénom": "Isabelle",
+      "Nom": "Petit",
+      "Âge": 22,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 33",
+      "Description du poste": "Travail sur Poste 33, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 1, Soudure Niveau 1, Montage mécanique Niveau 1",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 30.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 53 | Semaine 2: Poste 7",
+      "Commentaire de Carrière": "Jeune diplômée brillante, spécialisée en conception de structures aéronautiques légères, en début de carrière."
+    },
+    {
+      "Matricule": "AIR0034",
+      "Prénom": "Jacques",
+      "Nom": "Laurent",
+      "Âge": 28,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 34",
+      "Description du poste": "Travail sur Poste 34, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Assemblage Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 34.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 14 | Semaine 2: Poste 52",
+      "Commentaire de Carrière": "Technicien de précision expert en assemblage de composants complexes, ayant développé une expertise fine."
+    },
+    {
+      "Matricule": "AIR0035",
+      "Prénom": "Liam",
+      "Nom": "Durand",
+      "Âge": 35,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 35",
+      "Description du poste": "Travail sur Poste 35, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Assemblage Niveau 2, Contrôle qualité Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 17 | Semaine 2: Poste 42",
+      "Commentaire de Carrière": "Ingénieur en systèmes de propulsion, développant des technologies innovantes et progressant rapidement."
+    },
+    {
+      "Matricule": "AIR0036",
+      "Prénom": "Hana",
+      "Nom": "Simon",
+      "Âge": 32,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 36",
+      "Description du poste": "Travail sur Poste 36, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Contrôle qualité Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 1 | Semaine 2: Poste 48",
+      "Commentaire de Carrière": "Experte en gestion de projet, spécialisée dans les programmes aéronautiques complexes."
+    },
+    {
+      "Matricule": "AIR0037",
+      "Prénom": "Antoine",
+      "Nom": "Durand",
+      "Âge": 57,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 37",
+      "Description du poste": "Travail sur Poste 37, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 25 | Semaine 2: Poste 15",
+      "Commentaire de Carrière": "Directeur de production avec plus de 30 ans d'expérience, ayant traversé plusieurs mutations technologiques."
+    },
+    {
+      "Matricule": "AIR0038",
+      "Prénom": "François",
+      "Nom": "Durand",
+      "Âge": 50,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 38",
+      "Description du poste": "Travail sur Poste 38, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Contrôle qualité Niveau 3, Montage mécanique Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 12 | Semaine 2: Poste 23",
+      "Commentaire de Carrière": "Responsable stratégie industrielle, ayant piloté plusieurs transformations majeures dans l'industrie aéronautique."
+    },
+    {
+      "Matricule": "AIR0039",
+      "Prénom": "Marie",
+      "Nom": "Moreau",
+      "Âge": 38,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 39",
+      "Description du poste": "Travail sur Poste 39, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Contrôle qualité Niveau 2, Assemblage Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 50 | Semaine 2: Poste 40",
+      "Commentaire de Carrière": "Ingénieure méthodes optimisant en permanence les processus de production."
+    },
+    {
+      "Matricule": "AIR0040",
+      "Prénom": "Carlos",
+      "Nom": "Vincent",
+      "Âge": 26,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 40",
+      "Description du poste": "Travail sur Poste 40, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 35.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 44 | Semaine 2: Poste 9",
+      "Commentaire de Carrière": "Jeune talent en systèmes électroniques embarqués, montrant un potentiel prometteur d'innovation."
+    },
+    {
+      "Matricule": "AIR0041",
+      "Prénom": "Ethan",
+      "Nom": "Richard",
+      "Âge": 33,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 41",
+      "Description du poste": "Travail sur Poste 41, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Pneumatique, Hydraulique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 29 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Expert en systèmes de sécurité aéronautique, a développé des solutions innovantes de protection, progressant rapidement vers un rôle de chef d'équipe."
+    },
+    {
+      "Matricule": "AIR0042",
+      "Prénom": "André",
+      "Nom": "Petit",
+      "Âge": 22,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 42",
+      "Description du poste": "Travail sur Poste 42, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 1, Montage électrique Niveau 1",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 1 | Semaine 2: Poste 19",
+      "Commentaire de Carrière": "Jeune chef d'équipe junior, spécialisé en conception de structures légères et résistantes, montrant un potentiel prometteur."
+    },
+    {
+      "Matricule": "AIR0043",
+      "Prénom": "Hiroshi",
+      "Nom": "Fournier",
+      "Âge": 35,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 43",
+      "Description du poste": "Travail sur Poste 43, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Lecture plan Niveau 2, Montage électrique Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 40.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 8 | Semaine 2: Poste 17",
+      "Commentaire de Carrière": "Pionnier en robotique, a révolutionné l'automatisation des processus d'assemblage complexes, devenu référence technique."
+    },
+    {
+      "Matricule": "AIR0044",
+      "Prénom": "Luc",
+      "Nom": "Roux",
+      "Âge": 32,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 44",
+      "Description du poste": "Travail sur Poste 44, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Assemblage Niveau 2, Montage électrique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 53 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Technicien de maintenance avancée, expert en diagnostic et réparation de systèmes critiques, reconnu pour sa précision."
+    },
+    {
+      "Matricule": "AIR0045",
+      "Prénom": "Jean",
+      "Nom": "Roux",
+      "Âge": 42,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 45",
+      "Description du poste": "Travail sur Poste 45, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Soudure Niveau 2, Lecture plan Niveau 2, Montage électrique Niveau 2",
+      "Habilitations": "Pneumatique, Hydraulique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 20 | Semaine 2: Poste 7",
+      "Commentaire de Carrière": "Responsable qualité ayant mis en place des protocoles de contrôle de nouvelle génération, transformant les approches traditionnelles."
+    },
+    {
+      "Matricule": "AIR0046",
+      "Prénom": "Pierre",
+      "Nom": "Vincent",
+      "Âge": 35,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 46",
+      "Description du poste": "Travail sur Poste 46, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Soudure Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Pneumatique, Électrique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 21 | Semaine 2: Poste 39",
+      "Commentaire de Carrière": "Expert en logistique industrielle, a optimisé les chaînes d'approvisionnement aéronautiques avec une approche méthodique."
+    },
+    {
+      "Matricule": "AIR0047",
+      "Prénom": "Hana",
+      "Nom": "Martin",
+      "Âge": 22,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 47",
+      "Description du poste": "Travail sur Poste 47, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Assemblage Niveau 1",
+      "Habilitations": "Électrique, Mécanique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 11 | Semaine 2: Poste 5",
+      "Commentaire de Carrière": "Jeune ingénieure en systèmes électroniques, développant des technologies de communication embarquée, en pleine phase d'apprentissage."
+    },
+    {
+      "Matricule": "AIR0048",
+      "Prénom": "Noah",
+      "Nom": "Laurent",
+      "Âge": 51,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 48",
+      "Description du poste": "Travail sur Poste 48, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 3, Soudure Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 3 | Semaine 2: Poste 27",
+      "Commentaire de Carrière": "Directeur technique ayant supervisé plusieurs programmes de modernisation technologique, avec plus de 25 ans d'expérience."
+    },
+    {
+      "Matricule": "AIR0049",
+      "Prénom": "Raj",
+      "Nom": "Lefebvre",
+      "Âge": 58,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 49",
+      "Description du poste": "Travail sur Poste 49, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Montage mécanique Niveau 3, Montage électrique Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 51 | Semaine 2: Poste 27",
+      "Commentaire de Carrière": "Consultant senior en stratégies d'innovation et transformation industrielle, capitalisant une expertise internationale."
+    },
+    {
+      "Matricule": "AIR0050",
+      "Prénom": "Nathalie",
+      "Nom": "Roux",
+      "Âge": 41,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 50",
+      "Description du poste": "Travail sur Poste 50, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Assemblage Niveau 3, Lecture plan Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 38 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Responsable recherche et développement, pilotant des projets de rupture technologique avec une vision stratégique."
+    },
+    {
+      "Matricule": "AIR0051",
+      "Prénom": "Nathalie",
+      "Nom": "Martin",
+      "Âge": 24,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 51",
+      "Description du poste": "Travail sur Poste 51, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Contrôle qualité Niveau 2, Soudure Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 35.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 17 | Semaine 2: Poste 44",
+      "Commentaire de Carrière": "Jeune technicienne spécialisée en systèmes de navigation, en phase d'apprentissage des technologies avancées."
+    },
+    {
+      "Matricule": "AIR0052",
+      "Prénom": "Bernard",
+      "Nom": "Petit",
+      "Âge": 37,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 52",
+      "Description du poste": "Travail sur Poste 52, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 32 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Chef d'équipe technique expert en processus de production, concepteur de méthodes d'optimisation industrielle."
+    },
+    {
+      "Matricule": "AIR0053",
+      "Prénom": "Martine",
+      "Nom": "Dubois",
+      "Âge": 52,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 53",
+      "Description du poste": "Travail sur Poste 53, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Montage mécanique Niveau 3",
+      "Habilitations": "Mécanique, Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 48 | Semaine 2: Poste 17",
+      "Commentaire de Carrière": "Opératrice senior ayant accumulé une expérience significative dans la production aéronautique, devenue référence opérationnelle."
+    },
+    {
+      "Matricule": "AIR0054",
+      "Prénom": "Diego",
+      "Nom": "Thomas",
+      "Âge": 23,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 54",
+      "Description du poste": "Travail sur Poste 54, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 1, Montage mécanique Niveau 1",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 27 | Semaine 2: Poste 22",
+      "Commentaire de Carrière": "Jeune opérateur junior, en début de carrière, montrant un potentiel d'apprentissage et d'intégration rapide."
+    },
+    {
+      "Matricule": "AIR0055",
+      "Prénom": "Jacques",
+      "Nom": "Dubois",
+      "Âge": 44,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 55",
+      "Description du poste": "Travail sur Poste 55, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Montage mécanique Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 46 | Semaine 2: Poste 49",
+      "Commentaire de Carrière": "Opérateur technique expérimenté, expert en assemblage de composants aéronautiques sensibles."
+    },
+    {
+      "Matricule": "AIR0056",
+      "Prénom": "Camille",
+      "Nom": "Michel",
+      "Âge": 54,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 56",
+      "Description du poste": "Travail sur Poste 56, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Lecture plan Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 34 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Chef d'équipe senior avec une expertise approfondie, ayant piloté de nombreux projets complexes."
+    },
+    {
+      "Matricule": "AIR0057",
+      "Prénom": "Chen",
+      "Nom": "Lefebvre",
+      "Âge": 20,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 1",
+      "Description du poste": "Travail sur Poste 1, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 1, Lecture plan Niveau 1",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 30.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 3 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Jeune chef d'équipe junior, en début de carrière, montrant un potentiel d'innovation prometteur."
+    },
+    {
+      "Matricule": "AIR0058",
+      "Prénom": "Emma",
+      "Nom": "Simon",
+      "Âge": 42,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 2",
+      "Description du poste": "Travail sur Poste 2, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 17 | Semaine 2: Poste 18",
+      "Commentaire de Carrière": "Technicienne technique spécialisée, reconnue pour son expertise dans le contrôle qualité."
+    },
+    {
+      "Matricule": "AIR0059",
+      "Prénom": "Luc",
+      "Nom": "Petit",
+      "Âge": 23,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 3",
+      "Description du poste": "Travail sur Poste 3, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 1, Contrôle qualité Niveau 1, Lecture plan Niveau 1",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 38 | Semaine 2: Poste 10",
+      "Commentaire de Carrière": "Jeune chef d'équipe junior, spécialisé en métrologie, en phase de développement professionnel."
+    },
+    {
+      "Matricule": "AIR0060",
+      "Prénom": "Chen",
+      "Nom": "Laurent",
+      "Âge": 21,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 4",
+      "Description du poste": "Travail sur Poste 4, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 1, Lecture plan Niveau 1",
+      "Habilitations": "Mécanique, Pneumatique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 4 | Semaine 2: Poste 33",
+      "Commentaire de Carrière": "Jeune technicien junior, débutant dans l'industrie aéronautique, en phase d'apprentissage et de formation."
+    },
+    {
+      "Matricule": "AIR0061",
+      "Prénom": "Julien",
+      "Nom": "Bernard",
+      "Âge": 60,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 5",
+      "Description du poste": "Travail sur Poste 5, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Lecture plan Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 37 | Semaine 2: Poste 43",
+      "Commentaire de Carrière": "Opérateur senior avec plus de 35 ans d'expérience, ayant traversé plusieurs générations technologiques dans l'industrie aéronautique."
+    },
+    {
+      "Matricule": "AIR0062",
+      "Prénom": "Louis",
+      "Nom": "Garcia",
+      "Âge": 27,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 6",
+      "Description du poste": "Travail sur Poste 6, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Lecture plan Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 35.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 20 | Semaine 2: Poste 6",
+      "Commentaire de Carrière": "Jeune chef d'équipe junior, en développement professionnel, montrant un potentiel d'innovation et d'adaptation."
+    },
+    {
+      "Matricule": "AIR0063",
+      "Prénom": "Hiroshi",
+      "Nom": "Martin",
+      "Âge": 23,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 7",
+      "Description du poste": "Travail sur Poste 7, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Assemblage Niveau 1, Lecture plan Niveau 1",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 25 | Semaine 2: Poste 44",
+      "Commentaire de Carrière": "Jeune opérateur junior, débutant dans les systèmes électroniques embarqués, en phase d'apprentissage intensif."
+    },
+    {
+      "Matricule": "AIR0064",
+      "Prénom": "Bernard",
+      "Nom": "Michel",
+      "Âge": 56,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 8",
+      "Description du poste": "Travail sur Poste 8, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Soudure Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 14 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Opérateur senior avec une expertise approfondie, consultant stratégique en transformation industrielle aéronautique."
+    },
+    {
+      "Matricule": "AIR0065",
+      "Prénom": "Jacques",
+      "Nom": "Roux",
+      "Âge": 59,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 9",
+      "Description du poste": "Travail sur Poste 9, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Électrique, Mécanique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 15 | Semaine 2: Poste 7",
+      "Commentaire de Carrière": "Opérateur senior proche de la retraite, expert reconnu en systèmes de sécurité et innovations technologiques."
+    },
+    {
+      "Matricule": "AIR0066",
+      "Prénom": "Chen",
+      "Nom": "Petit",
+      "Âge": 50,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 10",
+      "Description du poste": "Travail sur Poste 10, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage mécanique Niveau 3, Soudure Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 25 | Semaine 2: Poste 9",
+      "Commentaire de Carrière": "Chef d'équipe expert ayant développé une stratégie d'approvisionnement innovante, optimisant les flux logistiques."
+    },
+    {
+      "Matricule": "AIR0067",
+      "Prénom": "Bernard",
+      "Nom": "Moreau",
+      "Âge": 23,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 11",
+      "Description du poste": "Travail sur Poste 11, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Soudure Niveau 1, Montage mécanique Niveau 1",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 36 | Semaine 2: Poste 31",
+      "Commentaire de Carrière": "Jeune chef d'équipe junior, montrant un potentiel prometteur en conception de systèmes complexes."
+    },
+    {
+      "Matricule": "AIR0068",
+      "Prénom": "Aisha",
+      "Nom": "Thomas",
+      "Âge": 42,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 12",
+      "Description du poste": "Travail sur Poste 12, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Pneumatique, Électrique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 28 | Semaine 2: Poste 46",
+      "Commentaire de Carrière": "Opératrice technique spécialisée en gestion de projets internationaux de haute technologie."
+    },
+    {
+      "Matricule": "AIR0069",
+      "Prénom": "Noah",
+      "Nom": "Thomas",
+      "Âge": 39,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 13",
+      "Description du poste": "Travail sur Poste 13, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 36 | Semaine 2: Poste 30",
+      "Commentaire de Carrière": "Opérateur technique expert dans les systèmes de certification et d'essais techniques."
+    },
+    {
+      "Matricule": "AIR0070",
+      "Prénom": "Noah",
+      "Nom": "Robert",
+      "Âge": 32,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 14",
+      "Description du poste": "Travail sur Poste 14, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Contrôle qualité Niveau 2, Lecture plan Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Mécanique, Électrique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 13 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Technicien technique spécialisé en systèmes de navigation, développant des technologies avancées."
+    },
+    {
+      "Matricule": "AIR0071",
+      "Prénom": "Antoine",
+      "Nom": "Vincent",
+      "Âge": 54,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 15",
+      "Description du poste": "Travail sur Poste 15, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Montage mécanique Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 27 | Semaine 2: Poste 31",
+      "Commentaire de Carrière": "Chef d'équipe senior ayant piloté plusieurs programmes de développement majeurs dans l'industrie aéronautique."
+    },
+    {
+      "Matricule": "AIR0072",
+      "Prénom": "Sophie",
+      "Nom": "Bernard",
+      "Âge": 52,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 16",
+      "Description du poste": "Travail sur Poste 16, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 52 | Semaine 2: Poste 24",
+      "Commentaire de Carrière": "Cheffe d'équipe senior, consultante de référence en stratégies d'innovation industrielle."
+    },
+    {
+      "Matricule": "AIR0073",
+      "Prénom": "Liam",
+      "Nom": "Michel",
+      "Âge": 39,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 17",
+      "Description du poste": "Travail sur Poste 17, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Montage mécanique Niveau 2, Contrôle qualité Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 50 | Semaine 2: Poste 37",
+      "Commentaire de Carrière": "Technicien technique expert en maintenance préventive des systèmes aéronautiques complexes."
+    },
+    {
+      "Matricule": "AIR0074",
+      "Prénom": "Ahmed",
+      "Nom": "Durand",
+      "Âge": 51,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 18",
+      "Description du poste": "Travail sur Poste 18, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 16 | Semaine 2: Poste 45",
+      "Commentaire de Carrière": "Technicien senior spécialisé en logistique, optimisant les flux de production internationaux."
+    },
+    {
+      "Matricule": "AIR0075",
+      "Prénom": "Bernard",
+      "Nom": "Moreau",
+      "Âge": 22,
+      "Qualification": "Chef d'Équipe Junior",
+      "Poste de montage": "Poste 19",
+      "Description du poste": "Travail sur Poste 19, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 1, Lecture plan Niveau 1, Soudure Niveau 1",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 48 | Semaine 2: Poste 21",
+      "Commentaire de Carrière": "Jeune chef d'équipe junior, montrant un potentiel prometteur en gestion de projets technologiques."
+    },
+    {
+      "Matricule": "AIR0076",
+      "Prénom": "Hélène",
+      "Nom": "Lefebvre",
+      "Âge": 47,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 20",
+      "Description du poste": "Travail sur Poste 20, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 16 | Semaine 2: Poste 31",
+      "Commentaire de Carrière": "Technicienne senior spécialisée en systèmes de propulsion, experte des technologies émergentes."
+    },
+    {
+      "Matricule": "AIR0077",
+      "Prénom": "Bernard",
+      "Nom": "Bernard",
+      "Âge": 45,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 21",
+      "Description du poste": "Travail sur Poste 21, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Contrôle qualité Niveau 2, Soudure Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 24 | Semaine 2: Poste 37",
+      "Commentaire de Carrière": "Opérateur technique expert en processus de production, concepteur de méthodes d'excellence."
+    },
+    {
+      "Matricule": "AIR0078",
+      "Prénom": "Diego",
+      "Nom": "Roux",
+      "Âge": 58,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 22",
+      "Description du poste": "Travail sur Poste 22, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Contrôle qualité Niveau 3, Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 4 | Semaine 2: Poste 6",
+      "Commentaire de Carrière": "Chef d'équipe senior, consultant stratégique en transformation digitale des processus industriels."
+    },
+    {
+      "Matricule": "AIR0079",
+      "Prénom": "Jacques",
+      "Nom": "Vincent",
+      "Âge": 45,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 23",
+      "Description du poste": "Travail sur Poste 23, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Soudure Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 2: Poste 46",
+      "Commentaire de Carrière": "Technicien technique garant de l'excellence technique et opérationnelle."
+    },
+    {
+      "Matricule": "AIR0080",
+      "Prénom": "Bernard",
+      "Nom": "Garcia",
+      "Âge": 31,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 24",
+      "Description du poste": "Travail sur Poste 24, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 45 | Semaine 2: Poste 34",
+      "Commentaire de Carrière": "Opérateur technique optimisant en permanence les processus de fabrication."
+    },
+    {
+      "Matricule": "AIR0081",
+      "Prénom": "Claire",
+      "Nom": "Leroy",
+      "Âge": 57,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 25",
+      "Description du poste": "Travail sur Poste 25, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Lecture plan Niveau 3, Contrôle qualité Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 51 | Semaine 2: Poste 25",
+      "Commentaire de Carrière": "Experte en recherche et développement, pilotant des projets de rupture technologique avec une vision stratégique."
+    },
+    {
+      "Matricule": "AIR0082",
+      "Prénom": "Martine",
+      "Nom": "David",
+      "Âge": 54,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 26",
+      "Description du poste": "Travail sur Poste 26, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 22 | Semaine 2: Poste 7",
+      "Commentaire de Carrière": "Cheffe d'équipe senior ayant géré des programmes complexes d'envergure internationale, référence dans la gestion de projets."
+    },
+    {
+      "Matricule": "AIR0083",
+      "Prénom": "Jean",
+      "Nom": "Vincent",
+      "Âge": 53,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 27",
+      "Description du poste": "Travail sur Poste 27, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage électrique Niveau 3, Assemblage Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 43 | Semaine 2: Poste 2",
+      "Commentaire de Carrière": "Chef d'équipe senior avec une expertise approfondie en systèmes de communication embarqués, développant des technologies innovantes."
+    },
+    {
+      "Matricule": "AIR0084",
+      "Prénom": "Hélène",
+      "Nom": "Lefebvre",
+      "Âge": 29,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 28",
+      "Description du poste": "Travail sur Poste 28, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 47 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Technicienne technique spécialisée en systèmes de navigation, maîtrisant les technologies de guidage."
+    },
+    {
+      "Matricule": "AIR0085",
+      "Prénom": "Miguel",
+      "Nom": "David",
+      "Âge": 47,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 29",
+      "Description du poste": "Travail sur Poste 29, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Montage électrique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 20 | Semaine 2: Poste 39",
+      "Commentaire de Carrière": "Chef d'équipe technique ayant transformé les stratégies de maintenance et de fiabilisation industrielle."
+    },
+    {
+      "Matricule": "AIR0086",
+      "Prénom": "Antoine",
+      "Nom": "Robert",
+      "Âge": 55,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 30",
+      "Description du poste": "Travail sur Poste 30, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique, Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 8 | Semaine 2: Poste 41",
+      "Commentaire de Carrière": "Opérateur senior expert dans la conception de structures aéronautiques avancées."
+    },
+    {
+      "Matricule": "AIR0087",
+      "Prénom": "Camille",
+      "Nom": "Dubois",
+      "Âge": 52,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 31",
+      "Description du poste": "Travail sur Poste 31, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique, Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 9 | Semaine 2: Poste 10",
+      "Commentaire de Carrière": "Opératrice senior avec une expertise technique en assemblage de composants critiques."
+    },
+    {
+      "Matricule": "AIR0088",
+      "Prénom": "Marie",
+      "Nom": "Vincent",
+      "Âge": 49,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 32",
+      "Description du poste": "Travail sur Poste 32, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Montage mécanique Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 53 | Semaine 2: Poste 9",
+      "Commentaire de Carrière": "Cheffe d'équipe experte en stratégies d'innovation et transformation industrielle."
+    },
+    {
+      "Matricule": "AIR0089",
+      "Prénom": "Hana",
+      "Nom": "Bertrand",
+      "Âge": 21,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 33",
+      "Description du poste": "Travail sur Poste 33, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 1, Contrôle qualité Niveau 1",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 14 | Semaine 2: Poste 24",
+      "Commentaire de Carrière": "Jeune technicienne junior en systèmes électroniques embarqués, montrant un potentiel prometteur."
+    },
+    {
+      "Matricule": "AIR0090",
+      "Prénom": "Louis",
+      "Nom": "Robert",
+      "Âge": 45,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 34",
+      "Description du poste": "Travail sur Poste 34, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Lecture plan Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 53 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Technicien technique spécialisé en systèmes de sécurité aéronautique, développant des solutions innovantes."
+    },
+    {
+      "Matricule": "AIR0091",
+      "Prénom": "Marie",
+      "Nom": "Garcia",
+      "Âge": 58,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 35",
+      "Description du poste": "Travail sur Poste 35, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Montage mécanique Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 24 | Semaine 2: Poste 47",
+      "Commentaire de Carrière": "Opératrice senior responsable de projets de recherche et développement technologiques majeurs."
+    },
+    {
+      "Matricule": "AIR0092",
+      "Prénom": "Paul",
+      "Nom": "Moreau",
+      "Âge": 51,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 36",
+      "Description du poste": "Travail sur Poste 36, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage mécanique Niveau 3, Soudure Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 2: Poste 38",
+      "Commentaire de Carrière": "Chef d'équipe senior, consultant stratégique en optimisation des processus industriels."
+    },
+    {
+      "Matricule": "AIR0093",
+      "Prénom": "Bernard",
+      "Nom": "Robert",
+      "Âge": 33,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 37",
+      "Description du poste": "Travail sur Poste 37, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Montage électrique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 22 | Semaine 2: Poste 22",
+      "Commentaire de Carrière": "Chef d'équipe technique expert en systèmes de propulsion, développant des technologies de pointe."
+    },
+    {
+      "Matricule": "AIR0094",
+      "Prénom": "Hélène",
+      "Nom": "Richard",
+      "Âge": 24,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 38",
+      "Description du poste": "Travail sur Poste 38, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Contrôle qualité Niveau 2, Montage mécanique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 36.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 35 | Semaine 2: Poste 50",
+      "Commentaire de Carrière": "Jeune technicienne junior en gestion de projets internationaux de haute technologie."
+    },
+    {
+      "Matricule": "AIR0095",
+      "Prénom": "Martine",
+      "Nom": "Garcia",
+      "Âge": 59,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 39",
+      "Description du poste": "Travail sur Poste 39, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 21 | Semaine 2: Poste 15",
+      "Commentaire de Carrière": "Technicienne senior ayant supervisé plusieurs programmes de modernisation technologique."
+    },
+    {
+      "Matricule": "AIR0096",
+      "Prénom": "Jacques",
+      "Nom": "Petit",
+      "Âge": 57,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 40",
+      "Description du poste": "Travail sur Poste 40, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Soudure Niveau 3, Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 18 | Semaine 2: Poste 15",
+      "Commentaire de Carrière": "Technicien senior expert en maintenance des systèmes aéronautiques complexes."
+    },
+    {
+      "Matricule": "AIR0097",
+      "Prénom": "Camille",
+      "Nom": "Roux",
+      "Âge": 49,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 41",
+      "Description du poste": "Travail sur Poste 41, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 56 | Semaine 2: Poste 26",
+      "Commentaire de Carrière": "Cheffe d'équipe experte, garante de l'excellence technique et opérationnelle."
+    },
+    {
+      "Matricule": "AIR0098",
+      "Prénom": "Luc",
+      "Nom": "Durand",
+      "Âge": 27,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 42",
+      "Description du poste": "Travail sur Poste 42, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Contrôle qualité Niveau 2, Lecture plan Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 2: Poste 45",
+      "Commentaire de Carrière": "Technicien technique en optimisation des processus de production, en développement professionnel."
+    },
+    {
+      "Matricule": "AIR0099",
+      "Prénom": "Camille",
+      "Nom": "Fournier",
+      "Âge": 35,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 43",
+      "Description du poste": "Travail sur Poste 43, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Montage mécanique Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Mécanique, Électrique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 27 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Cheffe d'équipe technique spécialisée en systèmes de navigation, experte des technologies avancées."
+    },
+    {
+      "Matricule": "AIR0100",
+      "Prénom": "Isabelle",
+      "Nom": "Moreau",
+      "Âge": 44,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 44",
+      "Description du poste": "Travail sur Poste 44, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Contrôle qualité Niveau 3, Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 23 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Cheffe d'équipe experte, responsable des approvisionnements stratégiques et optimisation des flux logistiques."
+    },
+    {
+      "Matricule": "AIR0101",
+      "Prénom": "Antoine",
+      "Nom": "Bertrand",
+      "Âge": 43,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 45",
+      "Description du poste": "Travail sur Poste 45, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 3, Contrôle qualité Niveau 3, Soudure Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique, Mécanique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 26 | Semaine 2: Poste 1",
+      "Commentaire de Carrière": "Chef d'équipe expert en conception de systèmes aéronautiques innovants, reconnu pour sa créativité technique."
+    },
+    {
+      "Matricule": "AIR0102",
+      "Prénom": "André",
+      "Nom": "Laurent",
+      "Âge": 34,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 46",
+      "Description du poste": "Travail sur Poste 46, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Assemblage Niveau 2, Montage mécanique Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Électrique, Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 28 | Semaine 2: Poste 33",
+      "Commentaire de Carrière": "Chef d'équipe technique concepteur de processus de production d'excellence, optimisant en permanence les méthodes."
+    },
+    {
+      "Matricule": "AIR0103",
+      "Prénom": "Luc",
+      "Nom": "Vincent",
+      "Âge": 42,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 47",
+      "Description du poste": "Travail sur Poste 47, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 3, Soudure Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 30 | Semaine 2: Poste 23",
+      "Commentaire de Carrière": "Opérateur senior spécialisé en stratégies de transformation digitale industrielle."
+    },
+    {
+      "Matricule": "AIR0104",
+      "Prénom": "Bernard",
+      "Nom": "Michel",
+      "Âge": 50,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 48",
+      "Description du poste": "Travail sur Poste 48, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage électrique Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Mécanique, Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 1 | Semaine 2: Poste 16",
+      "Commentaire de Carrière": "Technicien senior ayant développé des compétences avancées en maintenance préventive."
+    },
+    {
+      "Matricule": "AIR0105",
+      "Prénom": "Ahmed",
+      "Nom": "Vincent",
+      "Âge": 60,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 49",
+      "Description du poste": "Travail sur Poste 49, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Montage mécanique Niveau 3",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 19 | Semaine 2: Poste 36",
+      "Commentaire de Carrière": "Chef d'équipe senior expert en systèmes de communication embarqués, développant des technologies de pointe."
+    },
+    {
+      "Matricule": "AIR0106",
+      "Prénom": "Jacques",
+      "Nom": "Roux",
+      "Âge": 51,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 50",
+      "Description du poste": "Travail sur Poste 50, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 53 | Semaine 2: Poste 36",
+      "Commentaire de Carrière": "Technicien senior spécialisé en systèmes de sécurité, créateur de solutions innovantes."
+    },
+    {
+      "Matricule": "AIR0107",
+      "Prénom": "Isabelle",
+      "Nom": "Roux",
+      "Âge": 34,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 51",
+      "Description du poste": "Travail sur Poste 51, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 26 | Semaine 2: Poste 14",
+      "Commentaire de Carrière": "Opératrice technique experte en gestion de projets technologiques complexes."
+    },
+    {
+      "Matricule": "AIR0108",
+      "Prénom": "Alice",
+      "Nom": "Lefebvre",
+      "Âge": 33,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 52",
+      "Description du poste": "Travail sur Poste 52, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Montage électrique Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 20 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Technicienne technique spécialisée en conception de structures aéronautiques légères."
+    },
+    {
+      "Matricule": "AIR0109",
+      "Prénom": "Isabelle",
+      "Nom": "Robert",
+      "Âge": 52,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 53",
+      "Description du poste": "Travail sur Poste 53, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 40.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 52 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Cheffe d'équipe senior garantissant l'excellence technique des productions."
+    },
+    {
+      "Matricule": "AIR0110",
+      "Prénom": "Hana",
+      "Nom": "Simon",
+      "Âge": 47,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 54",
+      "Description du poste": "Travail sur Poste 54, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 2: Poste 33",
+      "Commentaire de Carrière": "Cheffe d'équipe technique experte en systèmes électroniques, maîtrisant les architectures embarquées."
+    },
+    {
+      "Matricule": "AIR0111",
+      "Prénom": "Sophie",
+      "Nom": "Lefebvre",
+      "Âge": 53,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 55",
+      "Description du poste": "Travail sur Poste 55, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Lecture plan Niveau 3, Contrôle qualité Niveau 3, Montage mécanique Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 41 | Semaine 2: Poste 38",
+      "Commentaire de Carrière": "Cheffe d'équipe senior, consultante de référence en stratégies d'innovation industrielle."
+    },
+    {
+      "Matricule": "AIR0112",
+      "Prénom": "Louis",
+      "Nom": "Leroy",
+      "Âge": 54,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 56",
+      "Description du poste": "Travail sur Poste 56, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Opérateur senior expert en processus de production, optimisant continuellement les méthodes."
+    },
+    {
+      "Matricule": "AIR0113",
+      "Prénom": "Louis",
+      "Nom": "Garcia",
+      "Âge": 30,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 1",
+      "Description du poste": "Travail sur Poste 1, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Pneumatique, Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 1 | Semaine 2: Poste 22",
+      "Commentaire de Carrière": "Opérateur technique en développement, prometteur dans l'innovation des systèmes de propulsion."
+    },
+    {
+      "Matricule": "AIR0114",
+      "Prénom": "Jacques",
+      "Nom": "Vincent",
+      "Âge": 41,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 2",
+      "Description du poste": "Travail sur Poste 2, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Montage mécanique Niveau 3, Contrôle qualité Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 21 | Semaine 2: Poste 5",
+      "Commentaire de Carrière": "Opérateur senior responsable des essais et certifications techniques."
+    },
+    {
+      "Matricule": "AIR0115",
+      "Prénom": "Nathalie",
+      "Nom": "Fournier",
+      "Âge": 50,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 3",
+      "Description du poste": "Travail sur Poste 3, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Lecture plan Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 11 | Semaine 2: Poste 18",
+      "Commentaire de Carrière": "Opératrice senior ayant piloté plusieurs programmes de développement majeurs."
+    },
+    {
+      "Matricule": "AIR0116",
+      "Prénom": "Raj",
+      "Nom": "Fournier",
+      "Âge": 28,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 4",
+      "Description du poste": "Travail sur Poste 4, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Lecture plan Niveau 2, Montage mécanique Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 6 | Semaine 2: Poste 50",
+      "Commentaire de Carrière": "Opérateur technique spécialisé en optimisation des flux logistiques."
+    },
+    {
+      "Matricule": "AIR0117",
+      "Prénom": "Jacques",
+      "Nom": "Fournier",
+      "Âge": 48,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 5",
+      "Description du poste": "Travail sur Poste 5, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Montage mécanique Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 11 | Semaine 2: Poste 51",
+      "Commentaire de Carrière": "Technicien senior expert en systèmes de navigation, développant des technologies avancées."
+    },
+    {
+      "Matricule": "AIR0118",
+      "Prénom": "Chen",
+      "Nom": "Simon",
+      "Âge": 37,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 6",
+      "Description du poste": "Travail sur Poste 6, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Montage mécanique Niveau 2, Assemblage Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Pneumatique, Hydraulique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 45 | Semaine 2: Poste 33",
+      "Commentaire de Carrière": "Chef d'équipe technique innovant en conception de systèmes embarqués."
+    },
+    {
+      "Matricule": "AIR0119",
+      "Prénom": "Yara",
+      "Nom": "Martin",
+      "Âge": 28,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 7",
+      "Description du poste": "Travail sur Poste 7, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 2 | Semaine 2: Poste 23",
+      "Commentaire de Carrière": "Cheffe d'équipe technique spécialisée en systèmes de communication, experte des technologies émergentes."
+    },
+    {
+      "Matricule": "AIR0120",
+      "Prénom": "Marie",
+      "Nom": "Richard",
+      "Âge": 50,
+      "Qualification": "Chef d'Équipe Expert",
+      "Poste de montage": "Poste 8",
+      "Description du poste": "Travail sur Poste 8, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Montage mécanique Niveau 3, Lecture plan Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 56 | Semaine 2: Poste 5",
+      "Commentaire de Carrière": "Cheffe d'équipe experte en recherche et développement, pilotant des projets technologiques stratégiques."
+    },
+    {
+      "Matricule": "AIR0121",
+      "Prénom": "Bernard",
+      "Nom": "Durand",
+      "Âge": 42,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 9",
+      "Description du poste": "Travail sur Poste 9, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 3, Montage mécanique Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 30 | Semaine 2: Poste 28",
+      "Commentaire de Carrière": "Opérateur senior expert en maintenance des systèmes aéronautiques complexes, référence technique."
+    },
+    {
+      "Matricule": "AIR0122",
+      "Prénom": "Marie",
+      "Nom": "Simon",
+      "Âge": 59,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 10",
+      "Description du poste": "Travail sur Poste 10, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Montage électrique Niveau 3, Soudure Niveau 3, Lecture plan Niveau 3",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 42.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 45 | Semaine 2: Poste 2",
+      "Commentaire de Carrière": "Cheffe d'équipe senior ayant géré des programmes internationaux complexes, reconnue pour son leadership."
+    },
+    {
+      "Matricule": "AIR0123",
+      "Prénom": "François",
+      "Nom": "Simon",
+      "Âge": 29,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 11",
+      "Description du poste": "Travail sur Poste 11, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Montage électrique Niveau 2",
+      "Habilitations": "Pneumatique, Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 15 | Semaine 2: Poste 4",
+      "Commentaire de Carrière": "Opérateur technique en développement, spécialisé dans les systèmes techniques aéronautiques."
+    },
+    {
+      "Matricule": "AIR0124",
+      "Prénom": "Hélène",
+      "Nom": "Bernard",
+      "Âge": 56,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 12",
+      "Description du poste": "Travail sur Poste 12, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Assemblage Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 31 | Semaine 2: Poste 15",
+      "Commentaire de Carrière": "Cheffe d'équipe senior avec une expertise approfondie dans la gestion de projets internationaux."
+    },
+    {
+      "Matricule": "AIR0125",
+      "Prénom": "Sophie",
+      "Nom": "Simon",
+      "Âge": 23,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 13",
+      "Description du poste": "Travail sur Poste 13, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 1, Lecture plan Niveau 1",
+      "Habilitations": "Mécanique, Électrique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 24 | Semaine 2: Poste 56",
+      "Commentaire de Carrière": "Opératrice junior en phase d'apprentissage, montrant un potentiel prometteur dans les technologies aéronautiques."
+    },
+    {
+      "Matricule": "AIR0126",
+      "Prénom": "Antoine",
+      "Nom": "Laurent",
+      "Âge": 40,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 14",
+      "Description du poste": "Travail sur Poste 14, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 34 | Semaine 2: Poste 38",
+      "Commentaire de Carrière": "Technicien technique spécialisé dans l'optimisation des processus de production."
+    },
+    {
+      "Matricule": "AIR0127",
+      "Prénom": "Priya",
+      "Nom": "Bertrand",
+      "Âge": 21,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 15",
+      "Description du poste": "Travail sur Poste 15, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 1, Montage électrique Niveau 1, Contrôle qualité Niveau 1",
+      "Habilitations": "Mécanique, Électrique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 44 | Semaine 2: Poste 7",
+      "Commentaire de Carrière": "Jeune technicienne junior, en début de carrière, montrant un intérêt pour l'innovation technologique."
+    },
+    {
+      "Matricule": "AIR0128",
+      "Prénom": "Sophie",
+      "Nom": "Fournier",
+      "Âge": 53,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 16",
+      "Description du poste": "Travail sur Poste 16, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Montage mécanique Niveau 3, Assemblage Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 6 | Semaine 2: Poste 29",
+      "Commentaire de Carrière": "Cheffe d'équipe senior avec une expertise significative en stratégies industrielles."
+    },
+    {
+      "Matricule": "AIR0129",
+      "Prénom": "Isabelle",
+      "Nom": "Leroy",
+      "Âge": 34,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 17",
+      "Description du poste": "Travail sur Poste 17, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Soudure Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 5 | Semaine 2: Poste 48",
+      "Commentaire de Carrière": "Technicienne technique spécialisée en systèmes de propulsion, développant des technologies de pointe."
+    },
+    {
+      "Matricule": "AIR0130",
+      "Prénom": "Isabelle",
+      "Nom": "Leroy",
+      "Âge": 49,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 18",
+      "Description du poste": "Travail sur Poste 18, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 48 | Semaine 2: Poste 43",
+      "Commentaire de Carrière": "Technicienne senior ayant optimisé la fiabilité des équipements de maintenance."
+    },
+    {
+      "Matricule": "AIR0131",
+      "Prénom": "Claire",
+      "Nom": "Moreau",
+      "Âge": 47,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 19",
+      "Description du poste": "Travail sur Poste 19, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 39.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 1 | Semaine 2: Poste 24",
+      "Commentaire de Carrière": "Technicienne senior experte en systèmes de navigation, maîtrisant les technologies avancées."
+    },
+    {
+      "Matricule": "AIR0132",
+      "Prénom": "Bernard",
+      "Nom": "Moreau",
+      "Âge": 27,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 20",
+      "Description du poste": "Travail sur Poste 20, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 11 | Semaine 2: Poste 48",
+      "Commentaire de Carrière": "Opérateur technique en développement, montrant une capacité d'adaptation et d'apprentissage."
+    },
+    {
+      "Matricule": "AIR0133",
+      "Prénom": "Nathalie",
+      "Nom": "Fournier",
+      "Âge": 22,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 21",
+      "Description du poste": "Travail sur Poste 21, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 1, Montage électrique Niveau 1, Montage mécanique Niveau 1",
+      "Habilitations": "Électrique, Pneumatique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 32 | Semaine 2: Poste 11",
+      "Commentaire de Carrière": "Opératrice junior en phase d'intégration, découvrant les complexités de l'industrie aéronautique."
+    },
+    {
+      "Matricule": "AIR0134",
+      "Prénom": "Raj",
+      "Nom": "Dubois",
+      "Âge": 43,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 22",
+      "Description du poste": "Travail sur Poste 22, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Soudure Niveau 2, Assemblage Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 48 | Semaine 2: Poste 14",
+      "Commentaire de Carrière": "Technicien technique spécialisé en transformation digitale des processus industriels."
+    },
+    {
+      "Matricule": "AIR0135",
+      "Prénom": "Paul",
+      "Nom": "Petit",
+      "Âge": 42,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 23",
+      "Description du poste": "Travail sur Poste 23, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 18 | Semaine 2: Poste 30",
+      "Commentaire de Carrière": "Opérateur senior expert en gestion des approvisionnements stratégiques."
+    },
+    {
+      "Matricule": "AIR0136",
+      "Prénom": "Alice",
+      "Nom": "Thomas",
+      "Âge": 50,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 24",
+      "Description du poste": "Travail sur Poste 24, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Contrôle qualité Niveau 3, Montage électrique Niveau 3, Montage mécanique Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 6 | Semaine 2: Poste 56",
+      "Commentaire de Carrière": "Opératrice senior ayant développé une expertise dans les systèmes de sécurité aéronautique."
+    },
+    {
+      "Matricule": "AIR0137",
+      "Prénom": "Camille",
+      "Nom": "Durand",
+      "Âge": 38,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 25",
+      "Description du poste": "Travail sur Poste 25, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 2, Montage électrique Niveau 2, Contrôle qualité Niveau 2, Lecture plan Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 22 | Semaine 2: Poste 11",
+      "Commentaire de Carrière": "Opératrice technique spécialisée dans la gestion de projets internationaux de haute technologie."
+    },
+    {
+      "Matricule": "AIR0138",
+      "Prénom": "Paul",
+      "Nom": "Moreau",
+      "Âge": 30,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 26",
+      "Description du poste": "Travail sur Poste 26, assemblage et contrôle",
+      "Compétences": "Lecture plan Niveau 2, Assemblage Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 40 | Semaine 2: Poste 36",
+      "Commentaire de Carrière": "Opérateur technique en optimisation des processus de production."
+    },
+    {
+      "Matricule": "AIR0139",
+      "Prénom": "Aisha",
+      "Nom": "Simon",
+      "Âge": 46,
+      "Qualification": "Chef d'Équipe Technique",
+      "Poste de montage": "Poste 27",
+      "Description du poste": "Travail sur Poste 27, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Lecture plan Niveau 2, Assemblage Niveau 2, Contrôle qualité Niveau 2",
+      "Habilitations": "Électrique, Hydraulique",
+      "Coût horaire (€)": 38.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 30 | Semaine 2: Poste 41",
+      "Commentaire de Carrière": "Cheffe d'équipe technique garantissant l'excellence technique des productions."
+    },
+    {
+      "Matricule": "AIR0140",
+      "Prénom": "Nathalie",
+      "Nom": "Simon",
+      "Âge": 38,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 28",
+      "Description du poste": "Travail sur Poste 28, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 2, Montage mécanique Niveau 2",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 37 | Semaine 2: Poste 23",
+      "Commentaire de Carrière": "Technicienne technique experte en systèmes électroniques, maîtrisant les architectures embarquées."
+    },
+    {
+      "Matricule": "AIR0141",
+      "Prénom": "Raj",
+      "Nom": "Petit",
+      "Âge": 34,
+      "Qualification": "Opérateur Technique",
+      "Poste de montage": "Poste 29",
+      "Description du poste": "Travail sur Poste 29, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 2, Lecture plan Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Mécanique, Hydraulique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 42 | Semaine 2: Poste 37",
+      "Commentaire de Carrière": "Opérateur technique spécialisé en stratégies d'innovation et transformation industrielle."
+    },
+    {
+      "Matricule": "AIR0142",
+      "Prénom": "Omar",
+      "Nom": "Simon",
+      "Âge": 22,
+      "Qualification": "Technicien Junior",
+      "Poste de montage": "Poste 30",
+      "Description du poste": "Travail sur Poste 30, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 1, Lecture plan Niveau 1, Contrôle qualité Niveau 1, Montage électrique Niveau 1",
+      "Habilitations": "Pneumatique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 16 | Semaine 2: Poste 5",
+      "Commentaire de Carrière": "Jeune technicien junior en systèmes de propulsion, en phase d'apprentissage et de développement."
+    },
+    {
+      "Matricule": "AIR0143",
+      "Prénom": "Jacques",
+      "Nom": "Richard",
+      "Âge": 35,
+      "Qualification": "Technicien Technique",
+      "Poste de montage": "Poste 31",
+      "Description du poste": "Travail sur Poste 31, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 2, Soudure Niveau 2",
+      "Habilitations": "Mécanique",
+      "Coût horaire (€)": 37.5,
+      "Niveau d'expérience": "Confirmé",
+      "Rotation": "Semaine 1: Poste 55 | Semaine 2: Poste 40",
+      "Commentaire de Carrière": "Technicien technique expert en systèmes de navigation, développant des technologies de pointe."
+    },
+    {
+      "Matricule": "AIR0144",
+      "Prénom": "Diego",
+      "Nom": "Richard",
+      "Âge": 57,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 32",
+      "Description du poste": "Travail sur Poste 32, assemblage et contrôle",
+      "Compétences": "Soudure Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Hydraulique, Mécanique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 36 | Semaine 2: Poste 8",
+      "Commentaire de Carrière": "Chef d'équipe senior responsable des essais et certifications techniques, garant de la qualité."
+    },
+    {
+      "Matricule": "AIR0145",
+      "Prénom": "Priya",
+      "Nom": "Fournier",
+      "Âge": 22,
+      "Qualification": "Opérateur Junior",
+      "Poste de montage": "Poste 33",
+      "Description du poste": "Travail sur Poste 33, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 1, Contrôle qualité Niveau 1, Montage mécanique Niveau 1, Montage électrique Niveau 1",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 32.5,
+      "Niveau d'expérience": "Débutant",
+      "Rotation": "Semaine 1: Poste 20 | Semaine 2: Poste 46",
+      "Commentaire de Carrière": "Opératrice junior en conception de structures aéronautiques légères, montrant un potentiel prometteur."
+    },
+    {
+      "Matricule": "AIR0146",
+      "Prénom": "Louis",
+      "Nom": "Thomas",
+      "Âge": 49,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 34",
+      "Description du poste": "Travail sur Poste 34, assemblage et contrôle",
+      "Compétences": "Contrôle qualité Niveau 3, Soudure Niveau 3, Lecture plan Niveau 3",
+      "Habilitations": "Hydraulique, Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 7 | Semaine 2: Poste 34",
+      "Commentaire de Carrière": "Technicien senior consultant en optimisation des processus industriels."
+    },
+    {
+      "Matricule": "AIR0147",
+      "Prénom": "Olivia",
+      "Nom": "Lefebvre",
+      "Âge": 51,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 35",
+      "Description du poste": "Travail sur Poste 35, assemblage et contrôle",
+      "Compétences": "Assemblage Niveau 3, Lecture plan Niveau 3, Montage mécanique Niveau 3, Montage électrique Niveau 3",
+      "Habilitations": "Hydraulique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 30 | Semaine 2: Poste 37",
+      "Commentaire de Carrière": "Opératrice senior experte en systèmes de communication embarqués, développant des technologies innovantes."
+    },
+    {
+      "Matricule": "AIR0148",
+      "Prénom": "Hana",
+      "Nom": "Petit",
+      "Âge": 49,
+      "Qualification": "Technicien Senior",
+      "Poste de montage": "Poste 36",
+      "Description du poste": "Travail sur Poste 36, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Assemblage Niveau 3",
+      "Habilitations": "Hydraulique, Pneumatique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 48 | Semaine 2: Poste 20",
+      "Commentaire de Carrière": "Technicienne senior ayant transformé les stratégies de maintenance et de fiabilisation."
+    },
+    {
+      "Matricule": "AIR0149",
+      "Prénom": "Miguel",
+      "Nom": "Lefebvre",
+      "Âge": 48,
+      "Qualification": "Opérateur Senior",
+      "Poste de montage": "Poste 37",
+      "Description du poste": "Travail sur Poste 37, assemblage et contrôle",
+      "Compétences": "Montage électrique Niveau 3, Lecture plan Niveau 3, Soudure Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 27 | Semaine 2: Poste 31",
+      "Commentaire de Carrière": "Opérateur senior spécialiste des systèmes de propulsion et des technologies émergentes."
+    },
+    {
+      "Matricule": "AIR0150",
+      "Prénom": "Yara",
+      "Nom": "Fournier",
+      "Âge": 58,
+      "Qualification": "Chef d'Équipe Senior",
+      "Poste de montage": "Poste 38",
+      "Description du poste": "Travail sur Poste 38, assemblage et contrôle",
+      "Compétences": "Montage mécanique Niveau 3, Assemblage Niveau 3, Contrôle qualité Niveau 3",
+      "Habilitations": "Électrique",
+      "Coût horaire (€)": 41.5,
+      "Niveau d'expérience": "Expert",
+      "Rotation": "Semaine 1: Poste 52 | Semaine 2: Poste 43",
+      "Commentaire de Carrière": "Cheffe d'équipe senior ayant supervisé plusieurs programmes de modernisation technologique."
+    }
+  ]
+}
