@@ -23,10 +23,34 @@ const DetailPanel = ({ item, employeesByMatricule, partsByReference, onClose }) 
     return refString.split(';').map(ref => ref.trim()).filter(ref => ref);
   };
 
-  // Obtenir les pièces depuis les références
+  // Obtenir les pièces depuis les références (avec quantités)
   const getPartsFromReferences = (refString) => {
     const refs = parsePartReferences(refString);
-    return refs.map(ref => partsByReference[ref]).filter(part => part);
+    
+    // Compter les occurrences de chaque référence
+    const refCounts = {};
+    refs.forEach(ref => {
+      refCounts[ref] = (refCounts[ref] || 0) + 1;
+    });
+    
+    // Créer un tableau unique de pièces avec leurs quantités
+    const uniqueParts = [];
+    const seen = new Set();
+    
+    refs.forEach(ref => {
+      if (!seen.has(ref)) {
+        seen.add(ref);
+        const part = partsByReference[ref];
+        if (part) {
+          uniqueParts.push({
+            ...part,
+            quantityUsed: refCounts[ref] // Quantité utilisée dans ce poste
+          });
+        }
+      }
+    });
+    
+    return uniqueParts;
   };
 
   return (
@@ -157,14 +181,21 @@ const DetailPanel = ({ item, employeesByMatricule, partsByReference, onClose }) 
                         onClick={() => setSelectedPart(part)}
                         className="p-3 bg-blue-50 rounded border border-blue-200 cursor-pointer hover:bg-blue-100 hover:border-blue-400 transition-all"
                       >
-                        <div className="font-semibold text-sm text-gray-800">
-                          {part.Désignation}
+                        <div className="flex items-start justify-between">
+                          <div className="font-semibold text-sm text-gray-800">
+                            {part.Désignation}
+                          </div>
+                          {part.quantityUsed > 1 && (
+                            <span className="px-2 py-0.5 bg-blue-600 text-white text-xs font-bold rounded-full">
+                              × {part.quantityUsed}
+                            </span>
+                          )}
                         </div>
                         <div className="text-xs text-gray-600 mt-1">
                           Code: {part['Code / Référence']}
                         </div>
                         <div className="flex justify-between mt-2 text-xs text-gray-600">
-                          <span>Qté: {part.Quantité}</span>
+                          <span>Stock: {part.Quantité}</span>
                           <span>{part.Fournisseur}</span>
                         </div>
                         <div className="text-xs text-blue-600 mt-1 font-medium">

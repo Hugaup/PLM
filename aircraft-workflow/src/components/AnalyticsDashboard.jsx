@@ -104,6 +104,12 @@ const AnalyticsDashboard = ({ stages, employees, parts, partsByReference }) => {
     let totalPostes = 0;
     let coutRetards = 0;
 
+    // Créer un index des employés par matricule pour accès rapide
+    const employeesByMatricule = {};
+    employees.forEach(emp => {
+      employeesByMatricule[emp.Matricule] = emp;
+    });
+
     stages.forEach(stage => {
       stage.postes.forEach(poste => {
         totalPostes++;
@@ -115,10 +121,26 @@ const AnalyticsDashboard = ({ stages, employees, parts, partsByReference }) => {
           parseInt(poste.temps_reel.split(':')[0]) * 60 + parseInt(poste.temps_reel.split(':')[1]) : 0;
         
         if (reelMinutes > prevuMinutes) {
-          totalRetard += reelMinutes - prevuMinutes;
-          // Coût du retard = (temps de retard en heures) × (nombre moyen d'employés au poste) × (coût horaire moyen)
-          // Estimation : 3 employés × 35€/h = 105€/h
-          coutRetards += (reelMinutes - prevuMinutes) / 60 * 105;
+          const retardMinutes = reelMinutes - prevuMinutes;
+          totalRetard += retardMinutes;
+          
+          // Calculer le temps de retard majoré (arrondi à l'heure supérieure)
+          const retardHeures = retardMinutes / 60;
+          const retardMajore = Math.ceil(retardHeures); // 0.5h → 1h, 1.1h → 2h
+          
+          // Calculer le coût horaire total des employés sur ce poste
+          let coutHorairePoste = 0;
+          if (poste.employees && poste.employees.length > 0) {
+            poste.employees.forEach(emp => {
+              const employeeData = employeesByMatricule[emp.Matricule];
+              if (employeeData && employeeData['Coût horaire (€)']) {
+                coutHorairePoste += employeeData['Coût horaire (€)'];
+              }
+            });
+          }
+          
+          // Coût du retard = temps majoré × coût horaire total du poste
+          coutRetards += retardMajore * coutHorairePoste;
         }
       });
     });
@@ -133,7 +155,7 @@ const AnalyticsDashboard = ({ stages, employees, parts, partsByReference }) => {
       piecesCritiques,
       heuresRetard: Math.round(totalRetard / 60)
     };
-  }, [stages, stockByCriticality]);
+  }, [stages, employees, stockByCriticality]);
 
   // 6. Coûts par fournisseur
   const costBySupplier = useMemo(() => {
@@ -367,7 +389,7 @@ const AnalyticsDashboard = ({ stages, employees, parts, partsByReference }) => {
               <li>{kpis.totalAleas} aléas détectés sur l'ensemble du workflow</li>
               <li>{kpis.heuresRetard}h de retard cumulé (≈ {kpis.coutRetards.toLocaleString('fr-FR')}€)*</li>
               <li>{kpis.piecesCritiques} pièces critiques manquantes</li>
-              <li className="text-xs text-gray-500 mt-2">* Coût estimé : {kpis.heuresRetard}h × 3 employés × 35€/h = {kpis.coutRetards.toLocaleString('fr-FR')}€</li>
+              <li className="text-xs text-gray-500 mt-2">* Coût du retard = temps majoré (arrondi heure sup.) × coût horaire des employés du poste</li>
             </ul>
           </div>
           <div>

@@ -16,6 +16,7 @@ MAESTRO est un système complet de gestion et d'analyse de la production aérona
 - Suivi de 40 pièces avec stock et criticité
 - Analytics avancés avec 6 graphiques interactifs
 - Analyse Ishikawa (6M) pour les causes racines
+- Système de recommandation d'affectation intelligent
 
 ## ✨ Fonctionnalités principales
 
@@ -45,7 +46,20 @@ MAESTRO est un système complet de gestion et d'analyse de la production aérona
 - Stock critique par niveau
 - Répartition des employés
 - Coûts par fournisseur
-- KPIs de performance
+- KPIs de performance avec coûts calculés dynamiquement
+
+### 🐟 Analyse Ishikawa (6M)
+- Classification de 56 problèmes selon les 6M
+- Diagramme en arêtes de poisson interactif
+- Filtrage par catégorie (Matériel, Méthode, Milieu, Matière, Main d'œuvre, Mesure)
+- Analyse des causes dominantes
+
+### 🎯 Recommandations d'Affectation
+- Algorithme de scoring multi-critères (100% local, sans API)
+- Top 5 candidats recommandés par poste
+- Score basé sur : compétences (40%), expérience (25%), niveau (20%), équipe (15%)
+- Priorisation des postes avec aléas
+- Détails du scoring pour transparence
 
 ## 🚀 Installation
 
@@ -73,14 +87,20 @@ L'application utilise un fichier `workflow_data.json` qui contient :
 
 ## 🎨 Navigation
 
-L'application comporte 6 onglets principaux :
+L'application comporte **7 onglets** organisés en 3 catégories :
 
-1. **Workflow BPMN** : Visualisation du processus de fabrication
-2. **Annuaire (150)** : Personnel avec filtres et recherche
-3. **Catalogue (40)** : Pièces avec stock et criticité
-4. **Planification Production** : Vue d'ensemble et pièces manquantes
-5. **Analytics** : Graphiques et KPIs de performance
-6. **Ishikawa (6M)** : Diagramme en arêtes de poisson pour analyse causes
+**🏭 Production**
+- **Workflow** : Visualisation BPMN du processus de fabrication
+- **Pièces (40)** : Catalogue avec stock et criticité
+- **Planning** : Vue d'ensemble et pièces manquantes
+
+**👥 Personnel**
+- **Annuaire (150)** : Personnel avec filtres et recherche
+- **Recommandations** : Suggestions d'affectation par poste
+
+**📊 Analyse**
+- **Indicateurs** : Graphiques et KPIs de performance
+- **Ishikawa (6M)** : Diagramme causes racines
 
 ## 🛠️ Technologies
 

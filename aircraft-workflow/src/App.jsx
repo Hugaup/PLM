@@ -16,6 +16,7 @@ import PartsDirectory from './components/PartsDirectory';
 import ProductionPlanning from './components/ProductionPlanning';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
 import IshikawaDashboard from './components/IshikawaDashboard';
+import RecommendationAffectation from './components/RecommendationAffectation';
 import workflowData from '../workflow_data.json';
 
 const nodeTypes = {
@@ -55,7 +56,7 @@ function App() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [viewMode, setViewMode] = useState('workflow'); // 'workflow' or 'detail'
-  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts', 'production', 'analytics' or 'ishikawa'
+  const [activeTab, setActiveTab] = useState('workflow'); // 'workflow', 'employees', 'parts', 'production', 'analytics', 'ishikawa' or 'recommandations'
 
   // Créer un index des employés par matricule pour un accès rapide
   const employeesByMatricule = useMemo(() => {
@@ -181,86 +182,130 @@ function App() {
 
   return (
     <div className="w-full h-full flex flex-col">
-      {/* Tabs */}
-      <div className="bg-white border-b border-gray-200 flex">
-        <button
-          onClick={() => {
-            setActiveTab('workflow');
-            setSelectedItem(null);
-          }}
-          className={`px-6 py-3 font-semibold transition-colors ${
-            activeTab === 'workflow'
-              ? 'border-b-2 border-blue-600 text-blue-600'
-              : 'text-gray-600 hover:text-gray-800'
-          }`}
-        >
-          🛩️ Workflow BPMN
-        </button>
-        <button
-          onClick={() => {
-            setActiveTab('employees');
-            setSelectedItem(null);
-          }}
-          className={`px-6 py-3 font-semibold transition-colors ${
-            activeTab === 'employees'
-              ? 'border-b-2 border-blue-600 text-blue-600'
-              : 'text-gray-600 hover:text-gray-800'
-          }`}
-        >
-          👥 Annuaire du Personnel ({workflowData.employees?.length || 0})
-        </button>
-        <button
-          onClick={() => {
-            setActiveTab('parts');
-            setSelectedItem(null);
-          }}
-          className={`px-6 py-3 font-semibold transition-colors ${
-            activeTab === 'parts'
-              ? 'border-b-2 border-blue-600 text-blue-600'
-              : 'text-gray-600 hover:text-gray-800'
-          }`}
-        >
-          📦 Catalogue des Pièces ({workflowData.parts?.length || 0})
-        </button>
-        <button
-          onClick={() => {
-            setActiveTab('production');
-            setSelectedItem(null);
-          }}
-          className={`px-6 py-3 font-semibold transition-colors ${
-            activeTab === 'production'
-              ? 'border-b-2 border-blue-600 text-blue-600'
-              : 'text-gray-600 hover:text-gray-800'
-          }`}
-        >
-          🏭 Planification Production
-        </button>
-        <button
-          onClick={() => {
-            setActiveTab('analytics');
-            setSelectedItem(null);
-          }}
-          className={`px-6 py-3 font-semibold transition-colors ${
-            activeTab === 'analytics'
-              ? 'border-b-2 border-purple-600 text-purple-600'
-              : 'text-gray-600 hover:text-gray-800'
-          }`}
-        >
-          📊 Analyse & Indicateurs
-        </button>
-        <button
-          onClick={() => {
-            setActiveTab('ishikawa');
-            setSelectedItem(null);
-          }}
-          className={`px-6 py-3 font-semibold transition-colors ${
-            activeTab === 'ishikawa'
-              ? 'border-b-2 border-green-600 text-green-600'
-              : 'text-gray-600 hover:text-gray-800'
-          }`}
-        >
-          🐟 Ishikawa (6M)
-        </button>
+      {/* Enhanced Navigation with Visual Grouping */}
+      <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-b-2 border-gray-300 shadow-sm">
+        <div className="flex items-center px-4 py-2">
+          {/* Logo/Brand */}
+          <div className="flex items-center gap-2 mr-6 px-4 py-1 bg-white rounded-lg shadow-sm border border-gray-200">
+            <span className="text-2xl">🎼</span>
+            <div className="text-sm">
+              <div className="font-bold text-gray-800">MAESTRO</div>
+              <div className="text-xs text-gray-500">Production Analytics</div>
+            </div>
+          </div>
+
+          {/* Production Section */}
+          <div className="flex items-center gap-1 mr-2 px-3 py-1 bg-blue-50 rounded-lg border border-blue-200">
+            <span className="text-xs font-bold text-blue-700 mr-2 pr-2 border-r-2 border-blue-300">🏭 PRODUCTION</span>
+            <button
+              onClick={() => {
+                setActiveTab('workflow');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'workflow'
+                  ? 'bg-blue-600 text-white shadow-md transform scale-105'
+                  : 'text-blue-700 hover:bg-blue-100'
+              }`}
+            >
+              🛩️ Workflow
+            </button>
+            <button
+              onClick={() => {
+                setActiveTab('parts');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'parts'
+                  ? 'bg-blue-600 text-white shadow-md transform scale-105'
+                  : 'text-blue-700 hover:bg-blue-100'
+              }`}
+            >
+              📦 Pièces ({workflowData.parts?.length || 0})
+            </button>
+            <button
+              onClick={() => {
+                setActiveTab('production');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'production'
+                  ? 'bg-blue-600 text-white shadow-md transform scale-105'
+                  : 'text-blue-700 hover:bg-blue-100'
+              }`}
+            >
+              📋 Planning
+            </button>
+          </div>
+
+          {/* Divider */}
+          <div className="h-10 w-px bg-gray-300 mx-2"></div>
+
+          {/* Personnel Section */}
+          <div className="flex items-center gap-1 mr-2 px-3 py-1 bg-green-50 rounded-lg border border-green-200">
+            <span className="text-xs font-bold text-green-700 mr-2 pr-2 border-r-2 border-green-300">👥 PERSONNEL</span>
+            <button
+              onClick={() => {
+                setActiveTab('employees');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'employees'
+                  ? 'bg-green-600 text-white shadow-md transform scale-105'
+                  : 'text-green-700 hover:bg-green-100'
+              }`}
+            >
+              📋 Annuaire ({workflowData.employees?.length || 0})
+            </button>
+            <button
+              onClick={() => {
+                setActiveTab('recommandations');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'recommandations'
+                  ? 'bg-green-600 text-white shadow-md transform scale-105'
+                  : 'text-green-700 hover:bg-green-100'
+              }`}
+            >
+              🎯 Recommandations
+            </button>
+          </div>
+
+          {/* Divider */}
+          <div className="h-10 w-px bg-gray-300 mx-2"></div>
+
+          {/* Analytics Section */}
+          <div className="flex items-center gap-1 px-3 py-1 bg-purple-50 rounded-lg border border-purple-200">
+            <span className="text-xs font-bold text-purple-700 mr-2 pr-2 border-r-2 border-purple-300">📊 ANALYSE</span>
+            <button
+              onClick={() => {
+                setActiveTab('analytics');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'analytics'
+                  ? 'bg-purple-600 text-white shadow-md transform scale-105'
+                  : 'text-purple-700 hover:bg-purple-100'
+              }`}
+            >
+              📈 Indicateurs
+            </button>
+            <button
+              onClick={() => {
+                setActiveTab('ishikawa');
+                setSelectedItem(null);
+              }}
+              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+                activeTab === 'ishikawa'
+                  ? 'bg-purple-600 text-white shadow-md transform scale-105'
+                  : 'text-purple-700 hover:bg-purple-100'
+              }`}
+            >
+              🐟 Ishikawa
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Content */}
@@ -326,9 +371,14 @@ function App() {
             parts={workflowData.parts || []}
             partsByReference={partsByReference}
           />
-        ) : (
+        ) : activeTab === 'ishikawa' ? (
           <IshikawaDashboard 
             stages={workflowData.stages || []} 
+          />
+        ) : (
+          <RecommendationAffectation 
+            stages={workflowData.stages || []} 
+            employees={workflowData.employees || []}
           />
         )}
       </div>
